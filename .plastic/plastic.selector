@@ -1,0 +1,4 @@
+repository "2DGameWork@timekeeper30@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"
