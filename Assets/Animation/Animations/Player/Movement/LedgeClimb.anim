@@ -7,7 +7,7 @@ AnimationClip:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LedgeClimb
-  serializedVersion: 6
+  serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
   m_UseHighQualityCurve: 1
@@ -20,14 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -6690693090405489421, guid: a2b813fdc1de4474796e2808b544f8f9,
-        type: 3}
+      value: {fileID: 904455032, guid: 4cb1afd17618d4844a923073a00a8fdd, type: 3}
     - time: 0.1
-      value: {fileID: 4340307602009781571, guid: a2b813fdc1de4474796e2808b544f8f9,
-        type: 3}
+      value: {fileID: -1975764156, guid: 4cb1afd17618d4844a923073a00a8fdd, type: 3}
     - time: 0.2
-      value: {fileID: -131500372201574662, guid: a2b813fdc1de4474796e2808b544f8f9,
-        type: 3}
+      value: {fileID: 1656669209, guid: 4cb1afd17618d4844a923073a00a8fdd, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -47,9 +44,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -6690693090405489421, guid: a2b813fdc1de4474796e2808b544f8f9, type: 3}
-    - {fileID: 4340307602009781571, guid: a2b813fdc1de4474796e2808b544f8f9, type: 3}
-    - {fileID: -131500372201574662, guid: a2b813fdc1de4474796e2808b544f8f9, type: 3}
+    - {fileID: 904455032, guid: 4cb1afd17618d4844a923073a00a8fdd, type: 3}
+    - {fileID: -1975764156, guid: 4cb1afd17618d4844a923073a00a8fdd, type: 3}
+    - {fileID: 1656669209, guid: 4cb1afd17618d4844a923073a00a8fdd, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

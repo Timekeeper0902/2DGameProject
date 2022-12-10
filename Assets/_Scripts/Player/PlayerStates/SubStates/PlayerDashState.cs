@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDashState : PlayerAbilityState {
+public class PlayerDashState : PlayerAbilityState 
+{
 	public bool CanDash { get; private set; }
 	private bool _isHolding;
 	private bool _dashInputStop;
@@ -11,10 +12,15 @@ public class PlayerDashState : PlayerAbilityState {
 	private Vector2 _dashDirectionInput;
 	private Vector2 _lastAIPos;
 
+	private RippleEffect _rippleEffect;
+
 	public PlayerDashState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName) {
 	}
-	public override void Enter() {
+	public override void Enter() 
+	{
 		base.Enter();
+
+		_rippleEffect = GameObject.Find("Main Camera").GetComponent<RippleEffect>();
 
 		CanDash = false;
 		player.InputHandler.UseDashInput();
@@ -29,24 +35,31 @@ public class PlayerDashState : PlayerAbilityState {
 
 	}
 
-	public override void Exit() {
+	public override void Exit() 
+	{
 		base.Exit();
 
-		if (Movement?.CurrentVelocity.y > 0) {
+		if (Movement?.CurrentVelocity.y > 0) 
+		{
 			Movement?.SetVelocityY(Movement.CurrentVelocity.y * playerData.dashEndYMultiplier);
 		}
+		
+		
 	}
 
-	public override void LogicUpdate() {
+	public override void LogicUpdate() 
+	{
 		base.LogicUpdate();
 
-		if (!isExitingState) {
+		if (!isExitingState) 
+		{
 
 			player.Anim.SetFloat("yVelocity", Movement.CurrentVelocity.y);
 			player.Anim.SetFloat("xVelocity", Mathf.Abs(Movement.CurrentVelocity.x));
 
 
-			if (_isHolding) {
+			if (_isHolding) 
+			{
 				_dashDirectionInput = player.InputHandler.DashDirectionInput;
 				_dashInputStop = player.InputHandler.DashInputStop;
 
@@ -59,25 +72,30 @@ public class PlayerDashState : PlayerAbilityState {
 				player.DashDirectionIndicator.rotation = Quaternion.Euler(0f, 0f, angle - 45f);
 
 				if (_dashInputStop || Time.unscaledTime >= startTime + playerData.maxHoldTime) {
+					_rippleEffect.Emit();
 					_isHolding = false;
 					Time.timeScale = 1f;
-					startTime = Time.time;
+					startTime = Time.time; 
 					Movement?.CheckIfShouldFlip(Mathf.RoundToInt(_dashDirection.x));
 					player.RB.drag = playerData.drag;
 					Movement?.SetVelocity(playerData.dashVelocity, _dashDirection);
 					player.DashDirectionIndicator.gameObject.SetActive(false);
 					PlaceAfterImage();
 				}
-			} else {
+			} 
+			else
+			{
 				Movement?.SetVelocity(playerData.dashVelocity, _dashDirection);
 				CheckIfShouldPlaceAfterImage();
 
-				if (Time.time >= startTime + playerData.dashTime) {
+				if (Time.time >= startTime + playerData.dashTime) 
+				{
 					player.RB.drag = 0f;
 					isAbilityDone = true;
 					playerData.lastDashTime = Time.time;
 				}
 			}
+			
 		}
 	}
 
