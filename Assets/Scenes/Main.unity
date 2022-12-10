@@ -10870,10 +10870,10 @@ GameObject:
   - component: {fileID: 986147882}
   - component: {fileID: 986147881}
   - component: {fileID: 986147880}
-  - component: {fileID: 986147884}
   - component: {fileID: 986147885}
+  - component: {fileID: 986147884}
   m_Layer: 9
-  m_Name: Monster_1
+  m_Name: Enemy1_Monster
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11046,16 +11046,7 @@ MonoBehaviour:
   ledgeCheck: {fileID: 387086606}
   playerCheck: {fileID: 687198049}
   groundCheck: {fileID: 50842229}
-  idleStateData: {fileID: 11400000, guid: a12d58295869d5c4b8a72dd70b9e367e, type: 2}
-  moveStateData: {fileID: 11400000, guid: d71407fa20cb3eb42ae5412ed3504c41, type: 2}
-  playerDetectedData: {fileID: 11400000, guid: ba0ca8ecf99120845b274a5ff27a54a8, type: 2}
-  chargeStateData: {fileID: 11400000, guid: 346a5e03ad42e6b47acd4a84e01ca8be, type: 2}
-  lookForPlayerStateData: {fileID: 11400000, guid: 0d7c0c4f6597ee5479e6ab0e4867c19f,
-    type: 2}
-  meleeAttackStateData: {fileID: 11400000, guid: 52982a8e08df37947b2966c4cf66e3ed,
-    type: 2}
-  stunStateData: {fileID: 11400000, guid: feb476734f45df242b04c3b50b211dc5, type: 2}
-  deadStateData: {fileID: 11400000, guid: 803c5f6895b75114087f77743674c1bc, type: 2}
+  stateData: {fileID: 11400000, guid: 421d284828f0e604a93f320aa33ff897, type: 2}
   meleeAttackPosition: {fileID: 1111674814}
 --- !u!1 &1002524025
 GameObject:
@@ -12318,7 +12309,7 @@ GameObject:
   - component: {fileID: 1671423158}
   - component: {fileID: 1671423159}
   m_Layer: 9
-  m_Name: Sniper_2
+  m_Name: Enemy2_Sniper
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12492,19 +12483,7 @@ MonoBehaviour:
   ledgeCheck: {fileID: 1704310397}
   playerCheck: {fileID: 2044105988}
   groundCheck: {fileID: 2105771701}
-  moveStateData: {fileID: 11400000, guid: 943765f339413144794fd27a6894dfcc, type: 2}
-  idleStateData: {fileID: 11400000, guid: 390268659f42098499c7b4c3e3c02e04, type: 2}
-  playerDetectedStateData: {fileID: 11400000, guid: 81e40338c851d014c8c8f2cb5de623e9,
-    type: 2}
-  meleeAttackStateData: {fileID: 11400000, guid: bfdfc956d041b684aad6069992ebe1aa,
-    type: 2}
-  lookForPlayerStateData: {fileID: 11400000, guid: f7493f57f9b8cd54ba3edb9480a87782,
-    type: 2}
-  stunStateData: {fileID: 11400000, guid: a70709937ac093745b1ebe44217bc75b, type: 2}
-  deadStateData: {fileID: 11400000, guid: a889f74363b812944a9c285aae1606c0, type: 2}
-  dodgeStateData: {fileID: 11400000, guid: 3f4657ca74ba50a4fb7578ae5e043abd, type: 2}
-  rangedAttackStateData: {fileID: 11400000, guid: 0ad3801fd63b05b45ad2876e57223e9b,
-    type: 2}
+  stateData: {fileID: 11400000, guid: 80839ce24abd12d47b93b53f01347c88, type: 2}
   meleeAttackPosition: {fileID: 2116236311}
   rangedAttackPosition: {fileID: 5891248}
 --- !u!1 &1677839603

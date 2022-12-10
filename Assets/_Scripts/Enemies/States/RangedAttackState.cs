@@ -1,15 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper.Enemies.EnemySpecific.Enemy1;
 using UnityEngine;
 
 public class RangedAttackState : AttackState
 {
-    protected D_RangedAttackState stateData;
+    protected EnemyBaseData stateData;
 
     protected GameObject projectile;
     protected Projectile projectileScript;
 
-    public RangedAttackState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, Transform attackPosition, D_RangedAttackState stateData) : base(entity, stateMachine, animBoolName, attackPosition)
+    public RangedAttackState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, Transform attackPosition, EnemyBaseData stateData) : base(entity, stateMachine, animBoolName, attackPosition)
     {
         this.stateData = stateData;
     }

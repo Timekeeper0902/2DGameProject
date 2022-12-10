@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Timekeeper.CoreSystem;
+using Timekeeper.Enemies.EnemySpecific.Enemy1;
 using UnityEngine;
 
 public class ChargeState : State {
@@ -11,7 +12,7 @@ public class ChargeState : State {
 	private CollisionSenses collisionSenses;
 
 
-	protected D_ChargeState stateData;
+	protected Timekeeper.Enemies.EnemySpecific.Enemy1.EnemyBaseData stateData;
 
 	protected bool isPlayerInMinAgroRange;
 	protected bool isDetectingLedge;
@@ -19,7 +20,7 @@ public class ChargeState : State {
 	protected bool isChargeTimeOver;
 	protected bool performCloseRangeAction;
 
-	public ChargeState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_ChargeState stateData) : base(entity, stateMachine, animBoolName) {
+	public ChargeState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, Timekeeper.Enemies.EnemySpecific.Enemy1.EnemyBaseData stateData) : base(entity, stateMachine, animBoolName) {
 		this.stateData = stateData;
 	}
 

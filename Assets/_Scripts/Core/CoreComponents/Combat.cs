@@ -11,12 +11,12 @@ namespace Timekeeper.CoreSystem
 		private CollisionSenses CollisionSenses {
 			get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses);
 		}
-		private Stats Stats { get => stats ?? core.GetCoreComponent(ref stats); }
+		private Stats Stats { get => _stats ?? core.GetCoreComponent(ref _stats); }
 		private ParticleManager ParticleManager => particleManager ? particleManager : core.GetCoreComponent(ref particleManager);
 	
 		private Movement movement;
 		private CollisionSenses collisionSenses;
-		private Stats stats;
+		private Stats _stats;
 		private ParticleManager particleManager;
 
 		[SerializeField] private float maxKnockbackTime = 0.2f;

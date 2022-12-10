@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Timekeeper.CoreSystem;
+using Timekeeper.Enemies.EnemySpecific.Enemy1;
 using UnityEngine;
 
 public class MoveState : State {
@@ -10,13 +11,13 @@ public class MoveState : State {
 	private Movement movement;
 	private CollisionSenses collisionSenses;
 
-	protected D_MoveState stateData;
+	protected EnemyBaseData stateData;
 
 	protected bool isDetectingWall;
 	protected bool isDetectingLedge;
 	protected bool isPlayerInMinAgroRange;
 
-	public MoveState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_MoveState stateData) : base(entity, stateMachine, animBoolName) {
+	public MoveState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, EnemyBaseData stateData) : base(entity, stateMachine, animBoolName) {
 		this.stateData = stateData;
 	}
 

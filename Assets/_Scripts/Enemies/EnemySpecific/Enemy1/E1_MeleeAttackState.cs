@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper.Enemies.EnemySpecific.Enemy1;
 using UnityEngine;
 
 public class E1_MeleeAttackState : MeleeAttackState
 {
     private Enemy1 enemy;
 
-    public E1_MeleeAttackState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, Transform attackPosition, D_MeleeAttack stateData, Enemy1 enemy) : base(entity, stateMachine, animBoolName, attackPosition, stateData)
+    public E1_MeleeAttackState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, Transform attackPosition, EnemyBaseData stateData, Enemy1 enemy) : base(entity, stateMachine, animBoolName, attackPosition, stateData)
     {
         this.enemy = enemy;
     }

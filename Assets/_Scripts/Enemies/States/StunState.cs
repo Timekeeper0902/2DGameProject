@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Timekeeper.CoreSystem;
+using Timekeeper.Enemies.EnemySpecific.Enemy1;
 using UnityEngine;
 
 public class StunState : State {
@@ -10,7 +11,7 @@ public class StunState : State {
 	private Movement movement;
 	private CollisionSenses collisionSenses;
 
-	protected D_StunState stateData;
+	protected EnemyBaseData stateData;
 
 	protected bool isStunTimeOver;
 	protected bool isGrounded;
@@ -18,7 +19,7 @@ public class StunState : State {
 	protected bool performCloseRangeAction;
 	protected bool isPlayerInMinAgroRange;
 
-	public StunState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_StunState stateData) : base(entity, stateMachine, animBoolName) {
+	public StunState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, EnemyBaseData stateData) : base(entity, stateMachine, animBoolName) {
 		this.stateData = stateData;
 	}
 

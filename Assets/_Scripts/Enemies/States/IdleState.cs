@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Timekeeper.CoreSystem;
+using Timekeeper.Enemies.EnemySpecific.Enemy1;
 using UnityEngine;
 
 public class IdleState : State {
@@ -10,7 +11,7 @@ public class IdleState : State {
 	private Movement movement;
 	private CollisionSenses collisionSenses;
 
-	protected D_IdleState stateData;
+	protected Timekeeper.Enemies.EnemySpecific.Enemy1.EnemyBaseData stateData;
 
 	protected bool flipAfterIdle;
 	protected bool isIdleTimeOver;
@@ -18,7 +19,7 @@ public class IdleState : State {
 
 	protected float idleTime;
 
-	public IdleState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_IdleState stateData) : base(entity, stateMachine, animBoolName) {
+	public IdleState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, Timekeeper.Enemies.EnemySpecific.Enemy1.EnemyBaseData stateData) : base(entity, stateMachine, animBoolName) {
 		this.stateData = stateData;
 	}
 

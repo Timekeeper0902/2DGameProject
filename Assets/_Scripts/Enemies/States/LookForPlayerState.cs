@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Timekeeper.CoreSystem;
+using Timekeeper.Enemies.EnemySpecific.Enemy1;
 using UnityEngine;
 
 public class LookForPlayerState : State {
@@ -10,7 +11,7 @@ public class LookForPlayerState : State {
 	private Movement movement;
 	private CollisionSenses collisionSenses;
 
-	protected D_LookForPlayer stateData;
+	protected EnemyBaseData stateData;
 
 	protected bool turnImmediately;
 	protected bool isPlayerInMinAgroRange;
@@ -21,7 +22,7 @@ public class LookForPlayerState : State {
 
 	protected int amountOfTurnsDone;
 
-	public LookForPlayerState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_LookForPlayer stateData) : base(entity, stateMachine, animBoolName) {
+	public LookForPlayerState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, EnemyBaseData stateData) : base(entity, stateMachine, animBoolName) {
 		this.stateData = stateData;
 	}
 

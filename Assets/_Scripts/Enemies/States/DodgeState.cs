@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Timekeeper.CoreSystem;
+using Timekeeper.Enemies.EnemySpecific.Enemy1;
 using UnityEngine;
 
 public class DodgeState : State {
@@ -10,14 +11,14 @@ public class DodgeState : State {
 	private Movement movement;
 	private CollisionSenses collisionSenses;
 
-	protected D_DodgeState stateData;
+	protected EnemyBaseData stateData;
 
 	protected bool performCloseRangeAction;
 	protected bool isPlayerInMaxAgroRange;
 	protected bool isGrounded;
 	protected bool isDodgeOver;
 
-	public DodgeState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_DodgeState stateData) : base(entity, stateMachine, animBoolName) {
+	public DodgeState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, EnemyBaseData stateData) : base(entity, stateMachine, animBoolName) {
 		this.stateData = stateData;
 	}
 

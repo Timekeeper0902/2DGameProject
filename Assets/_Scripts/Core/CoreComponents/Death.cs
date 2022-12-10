@@ -11,8 +11,8 @@ namespace Timekeeper.CoreSystem
     
         private ParticleManager particleManager;
 
-        private Stats Stats => stats ? stats : core.GetCoreComponent(ref stats);
-        private Stats stats;
+        private Stats Stats => _stats ? _stats : core.GetCoreComponent(ref _stats);
+        private Stats _stats;
     
         public void Die()
         {

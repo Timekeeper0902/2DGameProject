@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Timekeeper.CoreSystem;
+using Timekeeper.Enemies.EnemySpecific.Enemy1;
 using UnityEngine;
 
 public class MeleeAttackState : AttackState {
@@ -10,9 +11,9 @@ public class MeleeAttackState : AttackState {
 	private Movement movement;
 	private CollisionSenses collisionSenses;
 
-	protected D_MeleeAttack stateData;
+	protected EnemyBaseData stateData;
 
-	public MeleeAttackState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, Transform attackPosition, D_MeleeAttack stateData) : base(entity, stateMachine, animBoolName, attackPosition) {
+	public MeleeAttackState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, Transform attackPosition, EnemyBaseData stateData) : base(entity, stateMachine, animBoolName, attackPosition) {
 		this.stateData = stateData;
 	}
 
