@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper.Player.Data;
 using Timekeeper.CoreSystem;
 using UnityEngine;
 
 public class PlayerAbilityState : PlayerState {
 	protected bool isAbilityDone;
+
+	public PlayerAbilityState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, PlayerAudioData audioData, string animBoolName) : base(player, stateMachine, playerData, audioData, animBoolName)
+	{
+	}
 
 	protected Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
 	private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
@@ -13,9 +18,6 @@ public class PlayerAbilityState : PlayerState {
 	private CollisionSenses collisionSenses;
 
 	private bool isGrounded;
-
-	public PlayerAbilityState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName) {
-	}
 
 	public override void DoChecks() {
 		base.DoChecks();

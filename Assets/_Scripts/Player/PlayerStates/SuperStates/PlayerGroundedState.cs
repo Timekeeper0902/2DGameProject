@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper.Player.Data;
 using Timekeeper.CoreSystem;
 using UnityEngine;
 
@@ -9,6 +10,10 @@ public class PlayerGroundedState : PlayerState
     protected int yInput;
 
     protected bool isTouchingCeiling;
+
+    public PlayerGroundedState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, PlayerAudioData audioData, string animBoolName) : base(player, stateMachine, playerData, audioData, animBoolName)
+    {
+    }
 
     protected Movement Movement
     {
@@ -31,10 +36,6 @@ public class PlayerGroundedState : PlayerState
     private bool isTouchingLedge;
     private bool dashInput;
 
-    public PlayerGroundedState(Player player, PlayerStateMachine stateMachine, PlayerData playerData,
-        string animBoolName) : base(player, stateMachine, playerData, animBoolName)
-    {
-    }
 
     public override void DoChecks()
     {

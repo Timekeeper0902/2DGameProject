@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper;
+using Timekeeper.Player.Data;
 using UnityEngine;
 
 public class PlayerMoveState : PlayerGroundedState {
-	public PlayerMoveState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName) {
+	public PlayerMoveState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, PlayerAudioData audioData, string animBoolName) : base(player, stateMachine, playerData, audioData, animBoolName)
+	{
 	}
 
 	public override void DoChecks() {
@@ -12,6 +15,8 @@ public class PlayerMoveState : PlayerGroundedState {
 
 	public override void Enter() {
 		base.Enter();
+
+		player.ATA.moveState = this;
 	}
 
 	public override void Exit() {
@@ -36,5 +41,10 @@ public class PlayerMoveState : PlayerGroundedState {
 
 	public override void PhysicsUpdate() {
 		base.PhysicsUpdate();
+	}
+
+	public virtual void MoveAudioPlay()
+	{
+		AudioManager.Instance.PlayerMovePlay(audioData.moveClips);
 	}
 }

@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper.Player.Data;
 using Timekeeper.CoreSystem;
 using UnityEngine;
 
 public class PlayerLedgeClimbState : PlayerState {
+	public PlayerLedgeClimbState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, PlayerAudioData audioData, string animBoolName) : base(player, stateMachine, playerData, audioData, animBoolName)
+	{
+	}
 
 	protected Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
 	private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
@@ -25,9 +29,7 @@ public class PlayerLedgeClimbState : PlayerState {
 
 	private int xInput;
 	private int yInput;
-
-	public PlayerLedgeClimbState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName) {
-	}
+	
 
 	public override void AnimationFinishTrigger() {
 		base.AnimationFinishTrigger();

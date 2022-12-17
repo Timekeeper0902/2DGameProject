@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper.Player.Data;
 using Timekeeper.CoreSystem;
 using TMPro;
 using UnityEngine;
@@ -11,6 +12,7 @@ public class PlayerState
     protected Player player;
     protected PlayerStateMachine stateMachine;
     protected PlayerData playerData;
+    protected PlayerAudioData audioData;
 
     protected bool isAnimationFinished;
     protected bool isExitingState;
@@ -19,12 +21,13 @@ public class PlayerState
 
     private string animBoolName;
 
-    public PlayerState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName)
+    public PlayerState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, PlayerAudioData audioData,string animBoolName)
     {
         this.player = player;
         this.stateMachine = stateMachine;
         this.playerData = playerData;
         this.animBoolName = animBoolName;
+        this.audioData = audioData;
         core = player.Core;
     }
 

@@ -1,9 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper.Player.Data;
 using UnityEngine;
 
 public class PlayerDashState : PlayerAbilityState 
 {
+	public PlayerDashState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, PlayerAudioData audioData, string animBoolName) : base(player, stateMachine, playerData, audioData, animBoolName)
+	{
+	}
+
 	public bool CanDash { get; private set; }
 	private bool _isHolding;
 	private bool _dashInputStop;
@@ -14,8 +19,7 @@ public class PlayerDashState : PlayerAbilityState
 
 	private RippleEffect _rippleEffect;
 
-	public PlayerDashState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName) {
-	}
+
 	public override void Enter() 
 	{
 		base.Enter();

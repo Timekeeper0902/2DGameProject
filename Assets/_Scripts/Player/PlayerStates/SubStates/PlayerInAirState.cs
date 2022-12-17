@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper.Player.Data;
 using Timekeeper.CoreSystem;
 using UnityEngine;
 
 public class PlayerInAirState : PlayerState
 {
+    public PlayerInAirState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, PlayerAudioData audioData, string animBoolName) : base(player, stateMachine, playerData, audioData, animBoolName)
+    {
+    }
+
     protected Movement Movement
     {
         get => movement ?? core.GetCoreComponent(ref movement);
@@ -39,10 +44,6 @@ public class PlayerInAirState : PlayerState
 
     private float startWallJumpCoyoteTime;
 
-    public PlayerInAirState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName)
-        : base(player, stateMachine, playerData, animBoolName)
-    {
-    }
 
     public override void DoChecks()
     {
