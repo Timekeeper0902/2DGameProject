@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper.Player;
 using Timekeeper.Player.Data;
 using Timekeeper.CoreSystem;
 using Timekeeper.Intermediaries;
@@ -42,6 +43,7 @@ public class Player : MonoBehaviour
     public Rigidbody2D RB { get; private set; }
     public Transform DashDirectionIndicator { get; private set; }
     public BoxCollider2D MovementCollider { get; private set; }
+    public PlayerInventory Inventory { get; private set; }
     #endregion
 
     #region Other Variables         
@@ -59,12 +61,6 @@ public class Player : MonoBehaviour
         Core = GetComponentInChildren<Core>();
 
         ATA = gameObject.GetComponent<AudioToAudio>();
-
-        primaryWeapon = transform.Find("PrimaryWeapon").GetComponent<Weapon>();
-        secondaryWeapon = transform.Find("SecondaryWeapon").GetComponent<Weapon>();
-        
-        primaryWeapon.SetCore(Core);
-        secondaryWeapon.SetCore(Core);
         
         StateMachine = new PlayerStateMachine();
 
@@ -81,8 +77,8 @@ public class Player : MonoBehaviour
         DashState = new PlayerDashState(this, StateMachine, playerData,audioData, "inAir");
         CrouchIdleState = new PlayerCrouchIdleState(this, StateMachine, playerData, audioData,"crouchIdle");
         CrouchMoveState = new PlayerCrouchMoveState(this, StateMachine, playerData,audioData, "crouchMove");
-        PrimaryAttackState = new PlayerAttackState(this, StateMachine, playerData, audioData,"attack", primaryWeapon);
-        SecondaryAttackState = new PlayerAttackState(this, StateMachine, playerData, audioData,"attack", secondaryWeapon);
+        PrimaryAttackState = new PlayerAttackState(this, StateMachine, playerData, audioData,"attack" );
+        SecondaryAttackState = new PlayerAttackState(this, StateMachine, playerData, audioData,"attack");
     }
 
     private void Start()
@@ -92,6 +88,10 @@ public class Player : MonoBehaviour
         RB = GetComponent<Rigidbody2D>();
         DashDirectionIndicator = transform.Find("DashDirectionIndicator");
         MovementCollider = GetComponent<BoxCollider2D>();
+        Inventory = GetComponent<PlayerInventory>();
+        
+        PrimaryAttackState.SetWeapon(Inventory.weapons[(int)CombatInputs.primary]);
+        SecondaryAttackState.SetWeapon(Inventory.weapons[(int)CombatInputs.secondary]);
 
         StateMachine.Initialize(IdleState);
     }
@@ -100,12 +100,15 @@ public class Player : MonoBehaviour
     {
         Core.LogicUpdate();
         StateMachine.CurrentState.LogicUpdate();
+        
+        DontDestroyOnLoad(gameObject);
     }
 
     private void FixedUpdate()
     {
         StateMachine.CurrentState.PhysicsUpdate();
     }
+    
     #endregion
 
     #region Other Functions

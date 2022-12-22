@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f90df501c4a4034ac4e88fa1a10d761, type: 3}
+  m_Name: Sword1WeaponData
+  m_EditorClassIdentifier: 
+  attackDetails:
+  - attackName: "\u957F\u5251\u653B\u51FB1"
+    movementSpeed: 3
+    damageAmount: 10
+    knockbackStrength: 10
+    knockbackAngle: {x: 1, y: 1}
+  - attackName: "\u957F\u5251\u653B\u51FB2"
+    movementSpeed: 4
+    damageAmount: 15
+    knockbackStrength: 15
+    knockbackAngle: {x: 1, y: 1}
+  - attackName: "\u957F\u5251\u653B\u51FB3"
+    movementSpeed: 2
+    damageAmount: 20
+    knockbackStrength: 20
+    knockbackAngle: {x: 1, y: 2}

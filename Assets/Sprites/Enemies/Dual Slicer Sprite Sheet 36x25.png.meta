@@ -1,0 +1,1037 @@
+fileFormatVersion: 2
+guid: 7c0ddb28b93eac0448a14d562d269708
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 12
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d3845af5abb4d4cb2110ff39cf7612
+      internalID: -267843408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 100
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299a9be97e426754fb94a626107163d3
+      internalID: 2055310623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 100
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f87a963dc1fc3d40ac1236819f5e454
+      internalID: -406649676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 100
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a031e9a5c14c6f34cbc7f3398ab41cc8
+      internalID: -1771406118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 100
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf4757e37516d14e8bc7d998e6abf5e
+      internalID: 80562111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 100
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad3545043313b3499ed33fd8800051b
+      internalID: 226332872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 100
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3984e7df8de0745b68ec4f3f9ca35e
+      internalID: 858789618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 100
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b813bc73c0e6354e9a5938459544093
+      internalID: -1313597170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37c3c5e9aa01e246bb8e8c406086cf5
+      internalID: -1733121292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_9
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 75
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc3da716b5be8e498b928ead70f6e3c
+      internalID: 2095782018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_10
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 75
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f40e08f9d8f3f40998d3322a5984ed
+      internalID: -138223694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_11
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 75
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b08bfe77531124a801d278ab1d0b60
+      internalID: 755681548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_12
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 75
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37742845f384e0945aec099bc64e0ff6
+      internalID: -1433317403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_13
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 75
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0206f998e7073c4c81a7b56f046fb86
+      internalID: 32767042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_14
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 75
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6d3f5e53a599d4c8bd61dc6bdefd06
+      internalID: 2053440179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_15
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 75
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2de970cba1d2324f86779ddeeb35ba7
+      internalID: -1770005857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66be3e85762307c45a7644f388a248c6
+      internalID: 580316376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_17
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d170cb7701337949ae0a27b8539e0f9
+      internalID: 1218509651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_18
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81fc6aefe63bded4fa9a18cf6de11871
+      internalID: 1220984939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_19
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0517f17f2d3d16243bc36164e2f1a934
+      internalID: 299676667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_20
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15df8dca2f7bd8242ba52cad68e35d31
+      internalID: -2141718181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_21
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c49f3df27bbe144b76d6f98a06f4f2
+      internalID: 1409537761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_22
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb52ce2e9b05314591f45cfa2c1f0b8
+      internalID: 1774434910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_23
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9aa6b0208084754ea0b961bc8322c43
+      internalID: -298992811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_24
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72a986b0fd57784393817ea3981352e
+      internalID: 547008896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_25
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b4eaebc337f3f4085f7be4948c42c1
+      internalID: 1222080722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_26
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523e17da8c20a434aa6302b5c540b2d4
+      internalID: 1190888047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_27
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9603b9bac741fb948ac6e7e46d3fda95
+      internalID: -1965748529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_28
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb3df8e5d54383468ee8fc4b6423fb0
+      internalID: 6105053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_29
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36aaeabb590dc1448f8d27bf2fa616f
+      internalID: -580286221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_30
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75aa8b1dec80104181e4c5e97f2cbf0
+      internalID: 1860179151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_31
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc16716c3e0fb7449324502f0ea24ad
+      internalID: 887987025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_32
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84bab0c592bd3b940b30dc0a95bd3dcc
+      internalID: 1626782784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9df318cbf7435b429fbe03d88dcd03d
+      internalID: -442496288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_34
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 25
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d077db5b9029d764abb697147ab1eb80
+      internalID: -304136459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611a2886265fc7940b16f875ed86874f
+      internalID: 879416594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_36
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2b4051f744fdb4689a0301e884d915
+      internalID: -1639075406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_37
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35242f4f72acb4441a5f1362c1bd770d
+      internalID: 420863137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_38
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec43fa0ed30f544cabb689048bb3498
+      internalID: 1570711931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184358ea6046a5c4d955d607a076e0aa
+      internalID: 1782872416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer Sprite Sheet 36x25_40
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea439bf50477b7e47a1ae1a810b9426b
+      internalID: 906352740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dual Slicer Sprite Sheet 36x25_2: -406649676
+      Dual Slicer Sprite Sheet 36x25_37: 420863137
+      Dual Slicer Sprite Sheet 36x25_24: 547008896
+      Dual Slicer Sprite Sheet 36x25_1: 2055310623
+      Dual Slicer Sprite Sheet 36x25_36: -1639075406
+      Dual Slicer Sprite Sheet 36x25_14: 2053440179
+      Dual Slicer Sprite Sheet 36x25_18: 1220984939
+      Dual Slicer Sprite Sheet 36x25_15: -1770005857
+      Dual Slicer Sprite Sheet 36x25_21: 1409537761
+      Dual Slicer Sprite Sheet 36x25_0: -267843408
+      Dual Slicer Sprite Sheet 36x25_3: -1771406118
+      Dual Slicer Sprite Sheet 36x25_4: 80562111
+      Dual Slicer Sprite Sheet 36x25_20: -2141718181
+      Dual Slicer Sprite Sheet 36x25_13: 32767042
+      Dual Slicer Sprite Sheet 36x25_33: -442496288
+      Dual Slicer Sprite Sheet 36x25_38: 1570711931
+      Dual Slicer Sprite Sheet 36x25_32: 1626782784
+      Dual Slicer Sprite Sheet 36x25_6: 858789618
+      Dual Slicer Sprite Sheet 36x25_19: 299676667
+      Dual Slicer Sprite Sheet 36x25_8: -1733121292
+      Dual Slicer Sprite Sheet 36x25_23: -298992811
+      Dual Slicer Sprite Sheet 36x25_10: -138223694
+      Dual Slicer Sprite Sheet 36x25_5: 226332872
+      Dual Slicer Sprite Sheet 36x25_9: 2095782018
+      Dual Slicer Sprite Sheet 36x25_40: 906352740
+      Dual Slicer Sprite Sheet 36x25_12: -1433317403
+      Dual Slicer Sprite Sheet 36x25_22: 1774434910
+      Dual Slicer Sprite Sheet 36x25_27: -1965748529
+      Dual Slicer Sprite Sheet 36x25_31: 887987025
+      Dual Slicer Sprite Sheet 36x25_29: -580286221
+      Dual Slicer Sprite Sheet 36x25_35: 879416594
+      Dual Slicer Sprite Sheet 36x25_30: 1860179151
+      Dual Slicer Sprite Sheet 36x25_26: 1190888047
+      Dual Slicer Sprite Sheet 36x25_25: 1222080722
+      Dual Slicer Sprite Sheet 36x25_17: 1218509651
+      Dual Slicer Sprite Sheet 36x25_16: 580316376
+      Dual Slicer Sprite Sheet 36x25_34: -304136459
+      Dual Slicer Sprite Sheet 36x25_39: 1782872416
+      Dual Slicer Sprite Sheet 36x25_28: 6105053
+      Dual Slicer Sprite Sheet 36x25_7: -1313597170
+      Dual Slicer Sprite Sheet 36x25_11: 755681548
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

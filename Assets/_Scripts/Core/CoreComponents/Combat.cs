@@ -6,6 +6,7 @@ namespace Timekeeper.CoreSystem
 	{
 
 		[SerializeField] private GameObject damageParticles;
+		public GameObject floatPoint;
 	
 		private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
 		private CollisionSenses CollisionSenses {
@@ -31,6 +32,9 @@ namespace Timekeeper.CoreSystem
 		public void Damage(float amount) {
 			Debug.Log(core.transform.parent.name + " Damaged!");
 			Stats?.DecreaseHealth(amount);
+			GameObject gb = Instantiate(floatPoint,transform.position,Quaternion.identity) as GameObject;
+			gb.transform.GetChild(0).GetComponent<TextMesh>().text = amount.ToString(); 
+
 			ParticleManager?.StartParticlesWithRandomRotation(damageParticles);
 		}
 
