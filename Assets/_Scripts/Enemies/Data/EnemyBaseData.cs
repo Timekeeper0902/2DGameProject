@@ -1,7 +1,7 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Timekeeper.Enemies.EnemySpecific.Enemy1
+namespace Timekeeper.Enemies.Data
 {
     [CreateAssetMenu(fileName = "敌人数据", menuName = "数据/敌人数据/敌人基本数据", order = 0)]
     [InlineEditor]
@@ -40,7 +40,7 @@ namespace Timekeeper.Enemies.EnemySpecific.Enemy1
         public GameObject deathBloodParticle;
         
         [FoldoutGroup("@Enemy1MeleeAttackProperty"), LabelWidth(200), GUIColor(0.1f, 1f, 0.1f)]
-        public float attackRadius = 0.5f;
+        public Vector2 attackBoxArea = Vector2.zero;
         [FoldoutGroup("@Enemy1MeleeAttackProperty"), LabelWidth(200), GUIColor(0.1f, 1f, 0.1f)]
         public float attackDamage = 10f;
         [FoldoutGroup("@Enemy1MeleeAttackProperty"), LabelWidth(200), GUIColor(0.1f, 1f, 0.1f)]

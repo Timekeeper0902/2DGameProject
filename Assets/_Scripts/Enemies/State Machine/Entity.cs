@@ -1,16 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Timekeeper.CoreSystem;
+using Timekeeper.Enemies.Data;
 using UnityEngine;
 
 public class Entity : MonoBehaviour {
 	private Movement Movement { get => movement ?? Core.GetCoreComponent(ref movement); }
 
 	private Movement movement;
+	
+	private CollisionSenses CollisionSenses { get => collisionSenses ?? Core.GetCoreComponent(ref collisionSenses); }
+
+	private CollisionSenses collisionSenses;
 
 	public FiniteStateMachine stateMachine;
 
 	public D_Entity entityData;
+	
 
 	public Animator anim { get; private set; }
 	public AnimationToStatemachine atsm { get; private set; }
@@ -26,7 +32,6 @@ public class Entity : MonoBehaviour {
 	[SerializeField]
 	private Transform groundCheck;
 
-	private float currentHealth;
 	private float currentStunResistance;
 	private float lastDamageTime;
 
@@ -37,8 +42,6 @@ public class Entity : MonoBehaviour {
 
 	public virtual void Awake() {
 		Core = GetComponentInChildren<Core>();
-
-		currentHealth = entityData.maxHealth;
 		currentStunResistance = entityData.stunResistance;
 
 		anim = GetComponent<Animator>();
@@ -86,7 +89,7 @@ public class Entity : MonoBehaviour {
 
 	public virtual void OnDrawGizmos() {
 		if (Core != null) {
-			Gizmos.DrawLine(wallCheck.position, wallCheck.position + (Vector3)(Vector2.right * Movement.FacingDirection * entityData.wallCheckDistance));
+			Gizmos.DrawLine(wallCheck.position, wallCheck.position + (Vector3)(Vector2.right * Movement.FacingDirection * CollisionSenses.WallCheckDistance));
 			Gizmos.DrawLine(ledgeCheck.position, ledgeCheck.position + (Vector3)(Vector2.down * entityData.ledgeCheckDistance));
 
 			Gizmos.DrawWireSphere(playerCheck.position + (Vector3)(Vector2.right * entityData.closeRangeActionDistance), 0.2f);

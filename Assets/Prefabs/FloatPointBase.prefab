@@ -54,7 +54,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: afb55b07929eb5c489eb395c94493c39, type: 3}
+  - {fileID: 2100000, guid: 65055cd70e25b6c4ab910b101a8ee0c4, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -73,7 +73,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -679396035
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!102 &1533081161464928539
@@ -92,9 +92,9 @@ TextMesh:
   m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 1
-  m_FontStyle: 0
+  m_FontStyle: 1
   m_RichText: 1
-  m_Font: {fileID: 12800000, guid: afb55b07929eb5c489eb395c94493c39, type: 3}
+  m_Font: {fileID: 12800000, guid: 65055cd70e25b6c4ab910b101a8ee0c4, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4278190328

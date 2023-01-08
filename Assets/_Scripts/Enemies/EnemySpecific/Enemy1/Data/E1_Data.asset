@@ -21,7 +21,7 @@ MonoBehaviour:
     type: 3}
   deathBloodParticle: {fileID: 5096148057906189823, guid: 4a122dcc68153794295f6953dd91521e,
     type: 3}
-  attackRadius: 0.9
+  attackBoxArea: {x: 2, y: 1.4}
   attackDamage: 15
   knockbackAngle: {x: 1, y: 1}
   knockbackStrength: 10

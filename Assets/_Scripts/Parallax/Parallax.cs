@@ -22,6 +22,12 @@ namespace Timekeeper
 
         private float ParallaxFactor => Mathf.Abs(DistanceFromPlayer) / ClippingPlane;
 
+        private void Awake()
+        {
+            cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+            player = GameObject.Find("Player").transform;
+        }
+
         public void Start()
         {
             var position = transform.position;

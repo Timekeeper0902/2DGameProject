@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Timekeeper.Enemies.EnemySpecific.Enemy1;
+using Timekeeper.Enemies.Data;
 using UnityEngine;
 
 public class E2_DeadState : DeadState
 {
     private Enemy2 enemy;
 
-    public E2_DeadState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, EnemyBaseData stateData, Enemy2 enemy) : base(entity, stateMachine, animBoolName, stateData)
+
+    public E2_DeadState(Entity entity, FiniteStateMachine stateMachine, EnemyAudioData audioData, string animBoolName, EnemyBaseData stateData, Enemy2 enemy) : base(entity, stateMachine, audioData, animBoolName, stateData)
     {
         this.enemy = enemy;
     }

@@ -18,9 +18,15 @@ namespace Timekeeper
         private float _preHealth;
         private float _curHealth;
 
+        private void Awake()
+        {
+            stats = GameObject.Find("Player").GetComponentInChildren<Stats>();
+        }
+
         private void Update()
         {
             _preHealth = bloodBar.fillAmount;
+            
             _curHealth = stats.CurrentHealth / stats.maxHealth;
             bloodBar.fillAmount = _curHealth;
             if (_preHealth != bloodBar.fillAmount)

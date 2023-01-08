@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Timekeeper.CoreSystem;
-using Timekeeper.Enemies.EnemySpecific.Enemy1;
+using Timekeeper.Enemies.Data;
 using UnityEngine;
 
 public class MeleeAttackState : AttackState {
+	public MeleeAttackState(Entity entity, FiniteStateMachine stateMachine, EnemyAudioData audioData, string animBoolName, Transform attackPosition, EnemyBaseData stateData) : base(entity, stateMachine, audioData, animBoolName, attackPosition)
+	{
+		this.stateData = stateData;
+	}
+
 	private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
 	private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
 
@@ -12,10 +17,7 @@ public class MeleeAttackState : AttackState {
 	private CollisionSenses collisionSenses;
 
 	protected EnemyBaseData stateData;
-
-	public MeleeAttackState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, Transform attackPosition, EnemyBaseData stateData) : base(entity, stateMachine, animBoolName, attackPosition) {
-		this.stateData = stateData;
-	}
+	
 
 	public override void DoChecks() {
 		base.DoChecks();
@@ -44,7 +46,7 @@ public class MeleeAttackState : AttackState {
 	public override void TriggerAttack() {
 		base.TriggerAttack();
 
-		Collider2D[] detectedObjects = Physics2D.OverlapCircleAll(attackPosition.position, stateData.attackRadius, stateData.whatIsPlayer);
+		Collider2D[] detectedObjects = Physics2D.OverlapBoxAll(attackPosition.position, stateData.attackBoxArea, 0,stateData.whatIsPlayer);
 
 		foreach (Collider2D collider in detectedObjects) {
 			IDamageable damageable = collider.GetComponent<IDamageable>();

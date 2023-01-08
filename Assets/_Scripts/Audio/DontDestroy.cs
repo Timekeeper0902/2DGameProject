@@ -6,7 +6,7 @@ namespace Timekeeper
 {
     public class DontDestroy : MonoBehaviour
     {
-        void Update()
+        void Start()
         {
             DontDestroyOnLoad(gameObject);
         }

@@ -1,9 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Timekeeper.CoreSystem;
+using Timekeeper.Enemies.Data;
 using UnityEngine;
 
 public class AttackState : State {
+	public AttackState(Entity entity, FiniteStateMachine stateMachine, EnemyAudioData audioData, string animBoolName, Transform attackPosition) : base(entity, stateMachine, audioData, animBoolName)
+	{
+		this.attackPosition = attackPosition;
+	}
 
 	private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
 	private Movement movement;
@@ -13,9 +18,7 @@ public class AttackState : State {
 	protected bool isAnimationFinished;
 	protected bool isPlayerInMinAgroRange;
 
-	public AttackState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, Transform attackPosition) : base(entity, stateMachine, animBoolName) {
-		this.attackPosition = attackPosition;
-	}
+	
 
 	public override void DoChecks() {
 		base.DoChecks();

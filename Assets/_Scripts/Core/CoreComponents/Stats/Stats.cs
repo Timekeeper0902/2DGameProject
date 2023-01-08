@@ -17,10 +17,15 @@ namespace Timekeeper.CoreSystem
             CurrentHealth = maxHealth;
         }
 
+        /// <summary>
+        /// 减少固定生命值
+        /// </summary>
+        /// <param name="amount">减少值</param>
         public void DecreaseHealth(float amount)
         {
             CurrentHealth -= amount;
 
+            //死亡判断
             if(CurrentHealth <= 0)
             {
                 CurrentHealth = 0;
@@ -31,9 +36,21 @@ namespace Timekeeper.CoreSystem
             }
         }
 
+        /// <summary>
+        /// 恢复固定生命值
+        /// </summary>
+        /// <param name="amount">恢复值</param>
         public void IncreaseHealth(float amount)
         {
             CurrentHealth = Mathf.Clamp(CurrentHealth + amount, 0, maxHealth);
+        }
+
+        /// <summary>
+        /// 将当前生命值恢复到100%
+        /// </summary>
+        public void ReturnToMaxHealth()
+        {
+            CurrentHealth = maxHealth;
         }
     }
 }

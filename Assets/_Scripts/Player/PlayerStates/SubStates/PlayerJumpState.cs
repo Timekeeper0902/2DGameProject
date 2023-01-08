@@ -23,6 +23,7 @@ public class PlayerJumpState : PlayerAbilityState
 		_amountOfJumpsLeft--;
 		player.InAirState.SetIsJumping();
 		AudioManager.Instance.PlayerJumpPlay(audioData.jumpClip);
+		Debug.Log(_amountOfJumpsLeft);
 	}
 
 	public bool CanJump() 

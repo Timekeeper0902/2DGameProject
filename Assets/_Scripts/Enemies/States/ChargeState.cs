@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Timekeeper.CoreSystem;
-using Timekeeper.Enemies.EnemySpecific.Enemy1;
+using Timekeeper.Enemies.Data;
 using UnityEngine;
 
 public class ChargeState : State {
+	public ChargeState(Entity entity, FiniteStateMachine stateMachine, EnemyAudioData audioData, string animBoolName, EnemyBaseData stateData) : base(entity, stateMachine, audioData, animBoolName)
+	{
+		this.stateData = stateData;
+	}
+
 	private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
 	private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
 
@@ -12,7 +17,7 @@ public class ChargeState : State {
 	private CollisionSenses collisionSenses;
 
 
-	protected Timekeeper.Enemies.EnemySpecific.Enemy1.EnemyBaseData stateData;
+	protected EnemyBaseData stateData;
 
 	protected bool isPlayerInMinAgroRange;
 	protected bool isDetectingLedge;
@@ -20,9 +25,7 @@ public class ChargeState : State {
 	protected bool isChargeTimeOver;
 	protected bool performCloseRangeAction;
 
-	public ChargeState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, Timekeeper.Enemies.EnemySpecific.Enemy1.EnemyBaseData stateData) : base(entity, stateMachine, animBoolName) {
-		this.stateData = stateData;
-	}
+	
 
 	public override void DoChecks() {
 		base.DoChecks();

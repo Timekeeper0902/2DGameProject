@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Timekeeper.CoreSystem;
+using Timekeeper.Enemies.Data;
 using UnityEngine;
 
 public class State
 {
     protected FiniteStateMachine stateMachine;
+    protected EnemyAudioData audioData;
     protected Entity entity;
     protected Core core;    
 
@@ -13,11 +15,12 @@ public class State
 
     protected string animBoolName;
 
-    public State(Entity entity, FiniteStateMachine stateMachine, string animBoolName)
+    public State(Entity entity, FiniteStateMachine stateMachine, EnemyAudioData audioData,string animBoolName)
     {
         this.entity = entity;
         this.stateMachine = stateMachine;
         this.animBoolName = animBoolName;
+        this.audioData = audioData;
         core = this.entity.Core;
     }
 

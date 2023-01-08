@@ -19,7 +19,7 @@ namespace Timekeeper
             if (other.gameObject.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.BoxCollider2D")
             {
                 print("切换");
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene("GameScene2");
                 _player.gameObject.transform.position= new Vector2(266f, 3.3f);
             }
         }

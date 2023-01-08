@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Timekeeper.Enemies.EnemySpecific.Enemy1;
+using Timekeeper.Enemies.Data;
 using UnityEngine;
 
 public class Enemy1 : Entity
@@ -17,6 +17,8 @@ public class Enemy1 : Entity
     [SerializeField]
     private EnemyBaseData stateData;
 
+    [SerializeField] private EnemyAudioData _audioData;
+
 
     [SerializeField]
     private Transform meleeAttackPosition;
@@ -25,14 +27,14 @@ public class Enemy1 : Entity
     {
         base.Awake();
 
-        moveState = new E1_MoveState(this, stateMachine, "move", stateData, this);
-        idleState = new E1_IdleState(this, stateMachine, "idle", stateData, this);
-        playerDetectedState = new E1_PlayerDetectedState(this, stateMachine, "playerDetected", stateData, this);
-        chargeState = new E1_ChargeState(this, stateMachine, "charge", stateData, this);
-        lookForPlayerState = new E1_LookForPlayerState(this, stateMachine, "lookForPlayer", stateData, this);
-        meleeAttackState = new E1_MeleeAttackState(this, stateMachine, "meleeAttack", meleeAttackPosition, stateData, this);
-        stunState = new E1_StunState(this, stateMachine, "stun", stateData, this);
-        deadState = new E1_DeadState(this, stateMachine, "dead", stateData, this);
+        moveState = new E1_MoveState(this, stateMachine, _audioData,"move", stateData, this);
+        idleState = new E1_IdleState(this, stateMachine, _audioData,"idle", stateData, this);
+        playerDetectedState = new E1_PlayerDetectedState(this, stateMachine, _audioData,"playerDetected", stateData, this);
+        chargeState = new E1_ChargeState(this, stateMachine, _audioData,"charge", stateData, this);
+        lookForPlayerState = new E1_LookForPlayerState(this, stateMachine, _audioData,"lookForPlayer", stateData, this);
+        meleeAttackState = new E1_MeleeAttackState(this, stateMachine, _audioData,"meleeAttack", meleeAttackPosition, stateData, this);
+        stunState = new E1_StunState(this, stateMachine, _audioData,"stun", stateData, this);
+        deadState = new E1_DeadState(this, stateMachine, _audioData,"dead", stateData, this);
 
        
     }
@@ -46,6 +48,6 @@ public class Enemy1 : Entity
     {
         base.OnDrawGizmos();
 
-        Gizmos.DrawWireSphere(meleeAttackPosition.position, stateData.attackRadius);
+        Gizmos.DrawWireCube(meleeAttackPosition.position, stateData.attackBoxArea);
     }
 }

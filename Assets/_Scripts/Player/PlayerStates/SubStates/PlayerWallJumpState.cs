@@ -13,7 +13,7 @@ public class PlayerWallJumpState : PlayerAbilityState {
 	public override void Enter() {
 		base.Enter();
 		player.InputHandler.UseJumpInput();
-		player.JumpState.ResetAmountOfJumpsLeft();
+		//player.JumpState.ResetAmountOfJumpsLeft();
 		Movement?.SetVelocity(playerData.wallJumpVelocity, playerData.wallJumpAngle, wallJumpDirection);
 		Movement?.CheckIfShouldFlip(wallJumpDirection);
 		player.JumpState.DecreaseAmountOfJumpsLeft();

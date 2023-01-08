@@ -1,0 +1,1037 @@
+fileFormatVersion: 2
+guid: 1067424bc2d88e843b78992599f08267
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 12
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa812226417986a4a8b5ac45b79a35ec
+      internalID: 660197878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 100
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4450e6bc9cd66a47b9b42c759b8b084
+      internalID: -2058826987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 100
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427d125b5bcd6084f98213f0f82be43c
+      internalID: -515995195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 100
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da18ecf18fd4b6942b8eeffdd33ad1ad
+      internalID: -1299102658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 100
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21293938705a09e49a3cac4d97c7418c
+      internalID: -1570573863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 100
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d2803912e9ec749adeb9ad2b313797
+      internalID: -897200121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 100
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275f2e3dfe68f744f8490b68630353de
+      internalID: 1962221856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 100
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b6abd5da805264bb86e9ea248982b5
+      internalID: 1116027654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c0beb833c7c8543adc84a5810d308d
+      internalID: -1267462859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 75
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d4923792784b542a8c0e6c14b0d1ea
+      internalID: -1460067063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 75
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303f6d5f20ac8de439d5c947ca65089c
+      internalID: 476801894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 75
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1e0c5ddefdb4f4b8c121f661487b0c
+      internalID: -1951827820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 75
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62fd262f35abee4dab587841d27b085
+      internalID: -517812205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 75
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e16a7fe213285141b198adca55258af
+      internalID: -1009528347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 75
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e669265a9c629a41a877ed25807018d
+      internalID: 1750314877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 75
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2cdb2c88d29ca408b2d37df1421800
+      internalID: 1828854265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae0b744a44c0104e8c5a464d692f2ce
+      internalID: -1027334913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829166ce2a38d244aa9d6096393fd846
+      internalID: 1117463035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38827fad85d3164bb492405e7d8234d
+      internalID: 1475416003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_19
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c675ab89c5463b24f8ed1075e29cbeaf
+      internalID: 1195265229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_20
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b449262936b5ff429ab9b1616910c19
+      internalID: 1956985427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_21
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674c31ca619646f4889c49856ef37427
+      internalID: 1231159718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_22
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb7055e421d60b4d9ce6281fdee9a15
+      internalID: -931235912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_23
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479c104c957927e408db6911ac1a3572
+      internalID: 416608143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_24
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6f47bd10f8c5a4da57c4e0d3e9a5cf
+      internalID: -649267210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_25
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c822d6614ef86e4daa378b6b7b2a2da
+      internalID: -1249546936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_26
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8b42f24b9dc2348963670b8425e2ec
+      internalID: 2121893787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_27
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814b628acdb2b8247b42e64b25dd24d2
+      internalID: -1389300715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_28
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b893f44be0a5664dba63ddd1d51d827
+      internalID: 1085524343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_29
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc4643ffeb6ce348b51afec6170ae9c
+      internalID: -669812913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_30
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298e76531f2790647b5e41430a136858
+      internalID: 1664131432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_31
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afeac359e50b9814983a948c86f39a34
+      internalID: -222749415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_32
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 50
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552cb1b2c92f4b4478731c0e4bff12b7
+      internalID: -1912666718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c42901c4d62e0409b946adc450ea18
+      internalID: 706977504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_34
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 25
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5033f60f2c614498f9ca68722e68ef
+      internalID: -667390787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c682f848f650a024ca63584808d23e23
+      internalID: -533732065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_36
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6de0e313014041418f7878119c071d7
+      internalID: -1746429508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_37
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772f91b97d200354a881fcb7e77c5052
+      internalID: 1402150800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_38
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 653d1cdee7cebef4c856361154cf0426
+      internalID: 580183161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 610d0135975207742ad4c70944d124a9
+      internalID: -1060397951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dual Slicer flatten-sheet_40
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d6ff90b2fc42549ae512dd2cb9d9fa
+      internalID: -1849947626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dual Slicer flatten-sheet_10: 476801894
+      Dual Slicer flatten-sheet_28: 1085524343
+      Dual Slicer flatten-sheet_40: -1849947626
+      Dual Slicer flatten-sheet_27: -1389300715
+      Dual Slicer flatten-sheet_0: 660197878
+      Dual Slicer flatten-sheet_11: -1951827820
+      Dual Slicer flatten-sheet_25: -1249546936
+      Dual Slicer flatten-sheet_2: -515995195
+      Dual Slicer flatten-sheet_26: 2121893787
+      Dual Slicer flatten-sheet_36: -1746429508
+      Dual Slicer flatten-sheet_37: 1402150800
+      Dual Slicer flatten-sheet_9: -1460067063
+      Dual Slicer flatten-sheet_31: -222749415
+      Dual Slicer flatten-sheet_19: 1195265229
+      Dual Slicer flatten-sheet_16: -1027334913
+      Dual Slicer flatten-sheet_4: -1570573863
+      Dual Slicer flatten-sheet_6: 1962221856
+      Dual Slicer flatten-sheet_13: -1009528347
+      Dual Slicer flatten-sheet_14: 1750314877
+      Dual Slicer flatten-sheet_18: 1475416003
+      Dual Slicer flatten-sheet_15: 1828854265
+      Dual Slicer flatten-sheet_29: -669812913
+      Dual Slicer flatten-sheet_21: 1231159718
+      Dual Slicer flatten-sheet_3: -1299102658
+      Dual Slicer flatten-sheet_34: -667390787
+      Dual Slicer flatten-sheet_17: 1117463035
+      Dual Slicer flatten-sheet_30: 1664131432
+      Dual Slicer flatten-sheet_7: 1116027654
+      Dual Slicer flatten-sheet_38: 580183161
+      Dual Slicer flatten-sheet_5: -897200121
+      Dual Slicer flatten-sheet_8: -1267462859
+      Dual Slicer flatten-sheet_22: -931235912
+      Dual Slicer flatten-sheet_33: 706977504
+      Dual Slicer flatten-sheet_12: -517812205
+      Dual Slicer flatten-sheet_35: -533732065
+      Dual Slicer flatten-sheet_32: -1912666718
+      Dual Slicer flatten-sheet_20: 1956985427
+      Dual Slicer flatten-sheet_1: -2058826987
+      Dual Slicer flatten-sheet_23: 416608143
+      Dual Slicer flatten-sheet_39: -1060397951
+      Dual Slicer flatten-sheet_24: -649267210
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Timekeeper.Enemies.EnemySpecific.Enemy1;
+using Timekeeper.Enemies.Data;
 using UnityEngine;
 
 public class RangedAttackState : AttackState
@@ -10,7 +10,8 @@ public class RangedAttackState : AttackState
     protected GameObject projectile;
     protected Projectile projectileScript;
 
-    public RangedAttackState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, Transform attackPosition, EnemyBaseData stateData) : base(entity, stateMachine, animBoolName, attackPosition)
+
+    public RangedAttackState(Entity entity, FiniteStateMachine stateMachine, EnemyAudioData audioData, string animBoolName, Transform attackPosition, EnemyBaseData stateData) : base(entity, stateMachine, audioData, animBoolName, attackPosition)
     {
         this.stateData = stateData;
     }

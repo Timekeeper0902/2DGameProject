@@ -91,7 +91,6 @@ public class PlayerInAirState : PlayerState
     {
         base.LogicUpdate();
 
-        CheckCoyoteTime();
         CheckWallJumpCoyoteTime();
 
         xInput = player.InputHandler.NormInputX;
@@ -170,15 +169,6 @@ public class PlayerInAirState : PlayerState
     public override void PhysicsUpdate()
     {
         base.PhysicsUpdate();
-    }
-
-    private void CheckCoyoteTime()
-    {
-        if (coyoteTime && Time.time > startTime + playerData.coyoteTime)
-        {
-            coyoteTime = false;
-            player.JumpState.DecreaseAmountOfJumpsLeft();
-        }
     }
 
     private void CheckWallJumpCoyoteTime()

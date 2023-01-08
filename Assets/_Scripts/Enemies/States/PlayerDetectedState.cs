@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Timekeeper.CoreSystem;
-using Timekeeper.Enemies.EnemySpecific.Enemy1;
+using Timekeeper.Enemies.Data;
 using UnityEngine;
 
 public class PlayerDetectedState : State {
+	public PlayerDetectedState(Entity entity, FiniteStateMachine stateMachine, EnemyAudioData audioData, string animBoolName, EnemyBaseData stateData) : base(entity, stateMachine, audioData, animBoolName)
+	{
+		this.stateData = stateData;
+	}
+
 	protected Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
 	private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
 
@@ -18,10 +23,6 @@ public class PlayerDetectedState : State {
 	protected bool performLongRangeAction;
 	protected bool performCloseRangeAction;
 	protected bool isDetectingLedge;
-
-	public PlayerDetectedState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, EnemyBaseData stateData) : base(entity, stateMachine, animBoolName) {
-		this.stateData = stateData;
-	}
 
 	public override void DoChecks() {
 		base.DoChecks();

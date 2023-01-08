@@ -15,6 +15,7 @@ namespace Timekeeper
             if (_playerMoveSource == null)
             {
                 _playerMoveSource = gameObject.AddComponent<AudioSource>();
+                AudioSetting.Instance.AddAudioSource(_playerMoveSource);
             }
             int index = Random.Range(0, clips.Length);
             _playerMoveSource.clip = clips[index];
@@ -26,6 +27,7 @@ namespace Timekeeper
             if (_playerJumpSource == null)
             {
                 _playerJumpSource = gameObject.AddComponent<AudioSource>();
+                AudioSetting.Instance.AddAudioSource(_playerJumpSource);
             }
             _playerJumpSource.clip = clip;
             _playerJumpSource.Play();
