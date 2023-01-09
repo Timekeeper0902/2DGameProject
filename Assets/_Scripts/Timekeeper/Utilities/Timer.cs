@@ -7,7 +7,7 @@ namespace Timekeeper.Utilities
     {
         public event Action OnTimerDone;
         
-        private float startTime;
+        public  float startTime;
         private float duration;
         private float targetTime;
 
@@ -28,14 +28,18 @@ namespace Timekeeper.Utilities
         public void StopTimer()
         {
             isActive = false;
+            Debug.Log("TimerStop");
         }
 
         public void Tick()
         {
             if(!isActive) return;
 
+            Debug.Log(targetTime);
+            Debug.Log(Time.time);
             if (Time.time >= targetTime)
             {
+                
                 OnTimerDone?.Invoke();
                 StopTimer();
             }

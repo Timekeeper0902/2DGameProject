@@ -21,6 +21,7 @@ public class PlayerInputHandler : MonoBehaviour
     public bool GrabInput { get; private set; }
     public bool DashInput { get; private set; }
     public bool DashInputStop { get; private set; }
+    public bool EscInput { get; private set; }
 
     public bool[] AttackInputs { get; private set; }
 
@@ -153,6 +154,19 @@ public class PlayerInputHandler : MonoBehaviour
         if(Time.time >= _dashInputStartTime + inputHoldTime)
         {
             DashInput = false;
+        }
+    }
+    
+    public void OnEscInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            
+        }
+        
+        if (context.canceled)
+        {
+            EscInput = !EscInput;
         }
     }
 }

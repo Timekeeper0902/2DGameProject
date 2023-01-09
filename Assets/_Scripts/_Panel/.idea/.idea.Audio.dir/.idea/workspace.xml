@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ae03b8c4-4298-4248-9331-c5c0cb11c950" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Animation/Animations/UI/PauseUI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Animation/Animations/UI/PauseUI/PauseEnterUI.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Animation/Animations/UI/PauseUI/PauseEnterUI.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Animation/Animations/UI/PauseUI/PauseQuitUI.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Animation/Animations/UI/PauseUI/PauseQuitUI.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Animation/AnimatorControllers/UI/PauseUI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Animation/AnimatorControllers/UI/PauseUI/PauseUI_AC.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Animation/AnimatorControllers/UI/PauseUI/PauseUI_AC.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../InputSystem.inputsettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../InputSystem.inputsettings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Panel.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Panel/PausePanel.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Panel/PausePanel/PausePanel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Panel/PausePanel/PausePanel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Panel/Singleton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Panel/Singleton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.plastic/plastic.changes" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.plastic/plastic.changes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.plastic/plastic.wktree" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.plastic/plastic.wktree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameBeginPanel.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Panel/GameBeginPanel.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameBeginPanel/BeginPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Panel/GameBeginPanel/BeginPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameBeginPanel/BeginPanel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Panel/GameBeginPanel/BeginPanel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameBeginPanel/SettingPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Panel/GameBeginPanel/SettingPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameBeginPanel/SettingPanel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Panel/GameBeginPanel/SettingPanel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Singleton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Singleton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Manager/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Player/Input/Player.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/../Player/Input/Player.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Player/Input/PlayerInputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Player/Input/PlayerInputHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Player/PlayerStates/SubStates/PlayerJumpState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Player/PlayerStates/SubStates/PlayerJumpState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Timekeeper/Utilities/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Timekeeper/Utilities/Timer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2K5kgdyoflHK1n1OjrdGKvRhd7u" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\10457\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\10457\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\10457\\AppData\\Local\\Symbols\\src&quot;
+    ]
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae03b8c4-4298-4248-9331-c5c0cb11c950" name="Changes" comment="" />
+      <created>1673271944249</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673271944249</updated>
+      <workItem from="1673271946250" duration="340000" />
+      <workItem from="1673272437685" duration="16000" />
+      <workItem from="1673273365521" duration="68000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

@@ -4,6 +4,7 @@ using UnityEngine;
 using Cinemachine;
 using Timekeeper;
 using Timekeeper.CoreSystem;
+using Timekeeper.Panel.PausePanel;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -12,29 +13,26 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private GameObject player;
     [SerializeField] private float respawnTime;
     [SerializeField] private Stats stats;
+    private PlayerInputHandler _inputHandler;
     
 
     private float respawnTimeStart;
 
+    //public bool canPause = true;
     private bool respawn;
     public bool isDeath;
     public Animator DeathUI;
 
-    // private CinemachineVirtualCamera CVC;
-    //
-    // private void Start()
-    // {
-    //     CVC = GameObject.Find("Player Camera").GetComponent<CinemachineVirtualCamera>();
-    // }
-
     private void Awake()
     {
+        _inputHandler = GameObject.Find("Player").GetComponent<PlayerInputHandler>();
         DeathUI = GameObject.Find("DeathUI").GetComponent<Animator>();
     }
 
     private void Update()
     {
         CheckRespawn();
+        //CheckPuaseMemu();
     }
     public void Respawn()
     {
@@ -59,4 +57,20 @@ public class GameManager : Singleton<GameManager>
             DeathUI.SetBool("death",isDeath);
         }
     }
+    //
+    // /// <summary>
+    // /// 控制暂停菜单开关
+    // /// </summary>
+    // private void CheckPuaseMemu()
+    // {
+    //     if (canPause && _inputHandler.EscInput)
+    //     {
+    //         print("yes");
+    //         PausePanel.Instance.ShowMe();
+    //     }
+    //     else if (!canPause && _inputHandler.EscInput)
+    //     {
+    //         PausePanel.Instance.HideMe();
+    //     }
+    // }
 }
