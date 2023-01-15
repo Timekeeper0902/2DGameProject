@@ -77,9 +77,9 @@ public class PlayerLedgeClimbState : PlayerState {
 				stateMachine.ChangeState(player.IdleState);
 			}
 		} else {
-			xInput = player.InputHandler.NormInputX;
-			yInput = player.InputHandler.NormInputY;
-			jumpInput = player.InputHandler.JumpInput;
+			xInput = PlayerInputHandler.Instance.NormInputX;
+			yInput = PlayerInputHandler.Instance.NormInputY;
+			jumpInput = PlayerInputHandler.Instance.JumpInput;
 
 			Movement?.SetVelocityZero();
 			player.transform.position = startPos;

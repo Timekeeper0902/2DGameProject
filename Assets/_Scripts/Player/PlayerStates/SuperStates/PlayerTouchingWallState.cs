@@ -58,10 +58,10 @@ public class PlayerTouchingWallState : PlayerState {
 	public override void LogicUpdate() {
 		base.LogicUpdate();
 
-		xInput = player.InputHandler.NormInputX;
-		yInput = player.InputHandler.NormInputY;
-		grabInput = player.InputHandler.GrabInput;
-		jumpInput = player.InputHandler.JumpInput;
+		xInput = PlayerInputHandler.Instance.NormInputX;
+		yInput = PlayerInputHandler.Instance.NormInputY;
+		grabInput = PlayerInputHandler.Instance.GrabInput;
+		jumpInput = PlayerInputHandler.Instance.JumpInput;
 
 		if (jumpInput) {
 			player.WallJumpState.DetermineWallJumpDirection(isTouchingWall);

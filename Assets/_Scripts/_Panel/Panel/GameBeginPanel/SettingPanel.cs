@@ -38,7 +38,7 @@ namespace Timekeeper
             MusicData data = GameDataManager.Instance._musicData;
 
             musicSlider.value = data.musicValue;
-            musicToggle.isOn = data.isOpenBk;
+            musicToggle.isOn = data.isOpenMusic;
         }
 
         public override void ShowMe()

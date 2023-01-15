@@ -18,7 +18,7 @@ namespace Timekeeper
         {
             _instance = this;
             ChangeValue(GameDataManager.Instance._musicData.musicValue);
-            ChangeOpen(GameDataManager.Instance._musicData.isOpenBk);
+            ChangeOpen(GameDataManager.Instance._musicData.isOpenMusic);
         }
 
         /// <summary>

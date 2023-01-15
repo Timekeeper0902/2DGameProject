@@ -37,7 +37,7 @@ public class PlayerAttackState : PlayerAbilityState
     public override void LogicUpdate() {
         base.LogicUpdate();
 
-        xInput = player.InputHandler.NormInputX;
+        xInput = PlayerInputHandler.Instance.NormInputX;
 
         if (shouldCheckFlip) {
             Movement?.CheckIfShouldFlip(xInput);

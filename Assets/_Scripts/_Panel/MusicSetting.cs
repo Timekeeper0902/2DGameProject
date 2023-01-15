@@ -16,7 +16,7 @@ namespace Timekeeper
             _instance = this;
             _audioSource = GetComponent<AudioSource>();
             ChangeValue(GameDataManager.Instance._musicData.musicValue);
-            ChangeOpen(GameDataManager.Instance._musicData.isOpenBk);
+            ChangeOpen(GameDataManager.Instance._musicData.isOpenMusic);
         }
 
         /// <summary>

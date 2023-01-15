@@ -19,6 +19,8 @@ namespace Timekeeper
             }
             int index = Random.Range(0, clips.Length);
             _playerMoveSource.clip = clips[index];
+            _playerMoveSource.volume = GameDataManager.Instance._musicData.audioValue;
+            _playerMoveSource.mute = !GameDataManager.Instance._musicData.isOpenAudio;
             _playerMoveSource.Play();
         }
         
@@ -30,6 +32,8 @@ namespace Timekeeper
                 AudioSetting.Instance.AddAudioSource(_playerJumpSource);
             }
             _playerJumpSource.clip = clip;
+            _playerJumpSource.volume = GameDataManager.Instance._musicData.audioValue;
+            _playerJumpSource.mute = !GameDataManager.Instance._musicData.isOpenAudio;
             _playerJumpSource.Play();
         }
         

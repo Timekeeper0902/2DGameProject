@@ -29,9 +29,9 @@ namespace Timekeeper.CoreSystem
             //玩家重生
             if (core.transform.parent.tag == "Player")
             {
-                GameManager.Instance.isDeath = true;
-                GameManager.Instance.DeathUI.SetBool("death",GameManager.Instance.isDeath);
-                GameManager.Instance.Respawn();
+                ReSpawnManager.Instance.isDeath = true;
+                ReSpawnManager.Instance.DeathUI.SetBool("death",ReSpawnManager.Instance.isDeath);
+                ReSpawnManager.Instance.Respawn();
             }
         }
 

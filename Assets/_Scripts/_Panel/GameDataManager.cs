@@ -23,9 +23,9 @@ namespace Timekeeper
             {
                 _musicData.notFirstLoad = true;
                 _musicData.musicValue = 1;
-                _musicData.soundValue = 1;
-                _musicData.isOpenBk = true;
-                _musicData.isOpenSound = true;
+                _musicData.audioValue = 1;
+                _musicData.isOpenMusic = true;
+                _musicData.isOpenAudio = true;
                 PlayerPrefsDataMgr.Instance.SaveData(_musicData,"music");
             }
         }
@@ -35,7 +35,7 @@ namespace Timekeeper
         /// <param name="isOpen"></param>
         public void OpenOrCloseMusic(bool isOpen)
         {
-            _musicData.isOpenBk = isOpen;
+            _musicData.isOpenMusic = isOpen;
             
             MusicSetting.Instance.ChangeOpen(isOpen);
             
@@ -47,9 +47,9 @@ namespace Timekeeper
         /// 开启或关闭音效
         /// </summary>
         /// <param name="isOpen"></param>
-        public void OpenOrCloseSound(bool isOpen)
+        public void OpenOrCloseAudio(bool isOpen)
         {
-            _musicData.isOpenSound = isOpen;
+            _musicData.isOpenAudio = isOpen;
             
             AudioSetting.Instance.ChangeOpen(isOpen);
             
@@ -68,9 +68,9 @@ namespace Timekeeper
         }
         
         //改变音效音量大小
-        public void ChangeSoundValue(float value)
+        public void ChangeAudioValue(float value)
         {
-            _musicData.soundValue = value;
+            _musicData.audioValue = value;
             
             AudioSetting.Instance.ChangeValue(value);
             

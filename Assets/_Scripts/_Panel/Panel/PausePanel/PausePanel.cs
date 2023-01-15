@@ -2,58 +2,98 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Timekeeper.Panel.PausePanel
 {
     public class PausePanel : Singleton<PausePanel>
     {
-        public Button backToGame;
-        public Button gameSetting;
         public Button information;
+        public Button gameSetting;
+        public Button gameStats;
         public Button quitGame;
 
         public bool canPause = true;
 
         [SerializeField] private Animator anim;
 
-        private PlayerInputHandler _inputHandler;
         private GameObject children;
+        
+
 
         private void Start()
         {
-            _inputHandler = GameObject.Find("Player").GetComponent<PlayerInputHandler>();
             children = this.transform.GetChild(0).gameObject;
             anim = GetComponent<Animator>();
-            backToGame.onClick.AddListener(Exit);
+            information.onClick.AddListener(OpenInfomationPanel);
+            gameSetting.onClick.AddListener(OpenGameSettingPanel);
+            gameStats.onClick.AddListener(OpenGameStatsPanel);
+            quitGame.onClick.AddListener(OpenQuitGamePanel);
+            HideMe();
         }
 
         private void Update()
         {
-            if (_inputHandler.EscInput && canPause)
-            {
-                Enter();
-            }
-            else if (!_inputHandler.EscInput && !canPause)
-            {
-                Exit();
-            }
+            
         }
 
-        private void Enter()
+        /// <summary>
+        /// 进入暂停菜单
+        /// </summary>
+        public void Enter()
         {
             anim.SetBool("quit", false);
             anim.SetBool("enter", true);
             StartCoroutine(DelayToPauseTime());
         }
 
-        private void Exit()
+        /// <summary>
+        /// 离开暂停菜单
+        /// </summary>
+        public void Exit()
         {
-            StopCoroutine(DelayToPauseTime());
-            Time.timeScale = 1f;
+            QuitPanel.Instance.HideMe();
+            GameStatsPanel.Instance.HideMe();
+            InformationPanel.Instance.HideMe();
+            GameSettingPanel.Instance.HideMe();
             anim.SetBool("enter", false);
             anim.SetBool("quit", true);
+            StartCoroutine(DelayToPauseTime());
+            Time.timeScale = 1f;
             canPause = true;
+        }
+
+        private void OpenInfomationPanel()
+        {
+            QuitPanel.Instance.HideMe();
+            GameStatsPanel.Instance.HideMe();
+            GameSettingPanel.Instance.HideMe();
+            InformationPanel.Instance.ShowMe();
+        }
+        
+        private void OpenGameSettingPanel()
+        {
+            QuitPanel.Instance.HideMe();
+            GameStatsPanel.Instance.HideMe();
+            InformationPanel.Instance.HideMe();
+            GameSettingPanel.Instance.ShowMe();
+        }
+        
+        private void OpenGameStatsPanel()
+        {
+            InformationPanel.Instance.HideMe();
+            QuitPanel.Instance.HideMe();
+            GameSettingPanel.Instance.HideMe();
+            GameStatsPanel.Instance.ShowMe();
+        }
+        
+        private void OpenQuitGamePanel()
+        {
+            InformationPanel.Instance.HideMe();
+            QuitPanel.Instance.ShowMe();
+            GameSettingPanel.Instance.HideMe();
+            GameStatsPanel.Instance.HideMe();
         }
 
         public IEnumerator DelayToPauseTime()

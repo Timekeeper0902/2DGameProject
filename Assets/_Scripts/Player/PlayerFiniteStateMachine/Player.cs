@@ -4,13 +4,14 @@ using Timekeeper.Player;
 using Timekeeper.Player.Data;
 using Timekeeper.CoreSystem;
 using Timekeeper.Intermediaries;
+using Timekeeper.Panel.PausePanel;
 using Timekeeper.Weapons;
 using UnityEngine;
 using UnityEngine.Rendering;
 
 public class Player : MonoBehaviour
 {
-    #region State Variables
+    #region 状态变量
     public PlayerStateMachine StateMachine { get; private set; }
     public AudioToAudio ATA { get; private set; }
 
@@ -36,17 +37,16 @@ public class Player : MonoBehaviour
     [SerializeField] private PlayerAudioData audioData;
     #endregion
 
-    #region Components
+    #region 组件
     public Core Core { get; private set; }
     public Animator Anim { get; private set; }
-    public PlayerInputHandler InputHandler { get; private set; }
     public Rigidbody2D RB { get; private set; }
     public Transform DashDirectionIndicator { get; private set; }
     public BoxCollider2D MovementCollider { get; private set; }
     public PlayerInventory Inventory { get; private set; }
     #endregion
 
-    #region Other Variables         
+    #region 其他变量  
 
     private Vector2 workspace;
 
@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
     
     #endregion
 
-    #region Unity Callback Functions
+    #region 实例化状态
     private void Awake()
     {
         Core = GetComponentInChildren<Core>();
@@ -84,7 +84,6 @@ public class Player : MonoBehaviour
     private void Start()
     {
         Anim = GetComponent<Animator>();
-        InputHandler = GetComponent<PlayerInputHandler>();
         RB = GetComponent<Rigidbody2D>();
         DashDirectionIndicator = transform.Find("DashDirectionIndicator");
         MovementCollider = GetComponent<BoxCollider2D>();
@@ -98,8 +97,11 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        Core.LogicUpdate();
-        StateMachine.CurrentState.LogicUpdate();
+        if (PausePanel.Instance.canPause)
+        {
+            Core.LogicUpdate();
+            StateMachine.CurrentState.LogicUpdate(); 
+        }
         
         DontDestroyOnLoad(gameObject);
     }

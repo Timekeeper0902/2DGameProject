@@ -27,7 +27,7 @@ public class PlayerDashState : PlayerAbilityState
 		_rippleEffect = GameObject.Find("Main Camera").GetComponent<RippleEffect>();
 
 		CanDash = false;
-		player.InputHandler.UseDashInput();
+		PlayerInputHandler.Instance.UseDashInput();
 
 		_isHolding = true;
 		_dashDirection = Vector2.right * Movement.FacingDirection;
@@ -64,8 +64,8 @@ public class PlayerDashState : PlayerAbilityState
 
 			if (_isHolding) 
 			{
-				_dashDirectionInput = player.InputHandler.DashDirectionInput;
-				_dashInputStop = player.InputHandler.DashInputStop;
+				_dashDirectionInput = PlayerInputHandler.Instance.DashDirectionInput;
+				_dashInputStop = PlayerInputHandler.Instance.DashInputStop;
 
 				if (_dashDirectionInput != Vector2.zero) {
 					_dashDirection = _dashDirectionInput;

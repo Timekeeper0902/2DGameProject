@@ -17,12 +17,13 @@ public class PlayerJumpState : PlayerAbilityState
 	public override void Enter() 
 	{
 		base.Enter();
-		player.InputHandler.UseJumpInput();
+		PlayerInputHandler.Instance.UseJumpInput();
 		Movement?.SetVelocityY(playerData.jumpVelocity);
 		isAbilityDone = true;
 		_amountOfJumpsLeft--;
 		player.InAirState.SetIsJumping();
 		AudioManager.Instance.PlayerJumpPlay(audioData.jumpClip);
+		Debug.Log(GameDataManager.Instance._musicData.musicValue);
 	}
 
 	public bool CanJump() 
