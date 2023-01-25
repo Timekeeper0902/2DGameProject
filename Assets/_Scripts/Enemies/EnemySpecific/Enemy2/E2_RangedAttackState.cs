@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper._Panel;
 using Timekeeper.Enemies.Data;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ public class E2_RangedAttackState : RangedAttackState
     private Enemy2 _enemy;
 
 
-    public E2_RangedAttackState(Entity entity, FiniteStateMachine stateMachine, EnemyAudioData audioData, string animBoolName, Transform attackPosition, EnemyBaseData stateData, Enemy2 enemy) : base(entity, stateMachine, audioData, animBoolName, attackPosition, stateData)
+    public E2_RangedAttackState(Entity entity, FiniteStateMachine stateMachine, BaseAudioData baseAudioData, string animBoolName, Transform attackPosition, EnemyBaseData stateData, Enemy2 enemy) : base(entity, stateMachine, baseAudioData, animBoolName, attackPosition, stateData)
     {
         _enemy = enemy;
     }

@@ -18,17 +18,15 @@ namespace Timekeeper
             _player = GameObject.Find("Player").gameObject;
         }
 
-        private void Update()
-        {
-            _cantSwichDoor = GameObject.FindWithTag("Enemy");
-        }
-
         private void OnTriggerEnter2D(Collider2D other)
         {
+            _cantSwichDoor = GameObject.FindWithTag("Enemy");
+            
             if (_cantSwichDoor)
             {
                 if (other.gameObject.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.BoxCollider2D")
                 {
+                    text.text = "你还没有消灭场景中所有的敌人！";
                     text.gameObject.SetActive(true);
                 }
             }

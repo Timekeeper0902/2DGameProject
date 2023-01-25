@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper._Panel;
 using Timekeeper.Enemies.Data;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ public class E1_MeleeAttackState : MeleeAttackState
     private Enemy1 enemy;
 
 
-    public E1_MeleeAttackState(Entity entity, FiniteStateMachine stateMachine, EnemyAudioData audioData, string animBoolName, Transform attackPosition, EnemyBaseData stateData, Enemy1 enemy) : base(entity, stateMachine, audioData, animBoolName, attackPosition, stateData)
+    public E1_MeleeAttackState(Entity entity, FiniteStateMachine stateMachine, BaseAudioData baseAudioData, string animBoolName, Transform attackPosition, EnemyBaseData stateData, Enemy1 enemy) : base(entity, stateMachine, baseAudioData, animBoolName, attackPosition, stateData)
     {
         this.enemy = enemy;
     }

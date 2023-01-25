@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Timekeeper.Player.Data;
+using Timekeeper._Panel;
 using Timekeeper.Weapons;
 using UnityEngine;
 
@@ -16,7 +16,7 @@ public class PlayerAttackState : PlayerAbilityState
     private bool shouldCheckFlip;
 
 
-    public PlayerAttackState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, PlayerAudioData audioData, string animBoolName) : base(player, stateMachine, playerData, audioData, animBoolName)
+    public PlayerAttackState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, BaseAudioData baseAudioData, string animBoolName) : base(player, stateMachine, playerData, baseAudioData, animBoolName)
     {
     }
 

@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Timekeeper;
-using Timekeeper.Player.Data;
+using Timekeeper._Panel;
 using UnityEngine;
 
 public class PlayerMoveState : PlayerGroundedState {
-	public PlayerMoveState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, PlayerAudioData audioData, string animBoolName) : base(player, stateMachine, playerData, audioData, animBoolName)
+	public PlayerMoveState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, BaseAudioData baseAudioData, string animBoolName) : base(player, stateMachine, playerData, baseAudioData, animBoolName)
 	{
 	}
 
@@ -45,6 +45,6 @@ public class PlayerMoveState : PlayerGroundedState {
 
 	public virtual void MoveAudioPlay()
 	{
-		AudioManager.Instance.PlayerMovePlay(audioData.moveClips);
+		AudioManager.Instance.PlayerMovePlay(audioData.p_moveClips);
 	}
 }

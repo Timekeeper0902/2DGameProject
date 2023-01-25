@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Timekeeper.Player.Data;
+using Timekeeper._Panel;
 using Timekeeper.CoreSystem;
 using UnityEngine;
 
 public class PlayerTouchingWallState : PlayerState {
-	public PlayerTouchingWallState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, PlayerAudioData audioData, string animBoolName) : base(player, stateMachine, playerData, audioData, animBoolName)
+	public PlayerTouchingWallState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, BaseAudioData baseAudioData, string animBoolName) : base(player, stateMachine, playerData, baseAudioData, animBoolName)
 	{
 	}
 

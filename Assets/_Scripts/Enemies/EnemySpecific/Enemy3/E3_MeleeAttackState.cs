@@ -1,3 +1,4 @@
+using Timekeeper._Panel;
 using Timekeeper.Enemies.Data;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ namespace Timekeeper.Enemies.EnemySpecific.Enemy3
     {
         private Enemy3 enemy;
 
-        public E3_MeleeAttackState(Entity entity, FiniteStateMachine stateMachine, EnemyAudioData audioData, string animBoolName, Transform attackPosition, EnemyBaseData stateData, Enemy3 enemy) : base(entity, stateMachine, audioData, animBoolName, attackPosition, stateData)
+        public E3_MeleeAttackState(Entity entity, FiniteStateMachine stateMachine, BaseAudioData baseAudioData, string animBoolName, Transform attackPosition, EnemyBaseData stateData, Enemy3 enemy) : base(entity, stateMachine, baseAudioData, animBoolName, attackPosition, stateData)
         {
             this.enemy = enemy;
         }

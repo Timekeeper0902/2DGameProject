@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper._Panel;
 using Timekeeper.CoreSystem;
 using Timekeeper.Enemies.Data;
 using UnityEngine;
 
 public class MeleeAttackState : AttackState {
-	public MeleeAttackState(Entity entity, FiniteStateMachine stateMachine, EnemyAudioData audioData, string animBoolName, Transform attackPosition, EnemyBaseData stateData) : base(entity, stateMachine, audioData, animBoolName, attackPosition)
+	public MeleeAttackState(Entity entity, FiniteStateMachine stateMachine, BaseAudioData baseAudioData, string animBoolName, Transform attackPosition, EnemyBaseData stateData) : base(entity, stateMachine, baseAudioData, animBoolName, attackPosition)
 	{
 		this.stateData = stateData;
 	}

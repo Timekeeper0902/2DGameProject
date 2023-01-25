@@ -496,11 +496,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityData: {fileID: 11400000, guid: d831123858746b3438d74b9fa14e2104, type: 2}
+  baseAudioData: {fileID: 0}
   wallCheck: {fileID: 470628749298819182}
   ledgeCheck: {fileID: 470628749172743505}
   playerCheck: {fileID: 470628749455436606}
   groundCheck: {fileID: 470628748837957162}
   stateData: {fileID: 11400000, guid: 421d284828f0e604a93f320aa33ff897, type: 2}
+  baseAudioData: {fileID: 11400000, guid: fb4cbc99c3562814689335e64ad6d9fc, type: 2}
   meleeAttackPosition: {fileID: 470628749899443169}
 --- !u!114 &470628749756467315
 MonoBehaviour:

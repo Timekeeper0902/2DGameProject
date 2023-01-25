@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Timekeeper.Player.Data;
+using Timekeeper._Panel;
 using UnityEngine;
 
 public class PlayerWallClimbState : PlayerTouchingWallState {
-	public PlayerWallClimbState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, PlayerAudioData audioData, string animBoolName) : base(player, stateMachine, playerData, audioData, animBoolName)
+	public PlayerWallClimbState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, BaseAudioData baseAudioData, string animBoolName) : base(player, stateMachine, playerData, baseAudioData, animBoolName)
 	{
 	}
 

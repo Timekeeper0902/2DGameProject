@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper._Panel;
 using Timekeeper.CoreSystem;
-using Timekeeper.Enemies.Data;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Entity : MonoBehaviour {
 	private Movement Movement { get => movement ?? Core.GetCoreComponent(ref movement); }
@@ -16,6 +17,8 @@ public class Entity : MonoBehaviour {
 	public FiniteStateMachine stateMachine;
 
 	public D_Entity entityData;
+	
+	[FormerlySerializedAs("mainAudioData")] [SerializeField] private BaseAudioData baseAudioData;
 	
 
 	public Animator anim { get; private set; }

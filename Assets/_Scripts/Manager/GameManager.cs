@@ -2,7 +2,7 @@ using System;
 using Timekeeper.Panel.PausePanel;
 using UnityEngine;
 
-namespace Timekeeper._Scripts.Manager
+namespace Timekeeper.Manager
 {
     public class GameManager : Singleton<GameManager>
     {

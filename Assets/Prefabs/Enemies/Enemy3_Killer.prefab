@@ -155,7 +155,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -679396035
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 660197878, guid: 1067424bc2d88e843b78992599f08267, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -207,7 +207,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 03301e8e8906d2941bd4c0e90755c817, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &5524928651319714657
 BoxCollider2D:
@@ -248,13 +248,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityData: {fileID: 11400000, guid: 6212430a3312186459c87a56b3b87d55, type: 2}
+  baseAudioData: {fileID: 0}
   wallCheck: {fileID: 5524928651904377093}
   ledgeCheck: {fileID: 5524928652084593765}
   playerCheck: {fileID: 5524928651389695683}
   groundCheck: {fileID: 5524928653250829221}
   E3_meleeAttackCounter: 0
   stateData: {fileID: 11400000, guid: a75670cef7c5feb4e8bab104c9091dc0, type: 2}
-  _audioData: {fileID: 0}
+  baseAudioData: {fileID: 11400000, guid: fb4cbc99c3562814689335e64ad6d9fc, type: 2}
   meleeAttackPosition: {fileID: 5524928651206981966}
 --- !u!114 &5524928651319714589
 MonoBehaviour:

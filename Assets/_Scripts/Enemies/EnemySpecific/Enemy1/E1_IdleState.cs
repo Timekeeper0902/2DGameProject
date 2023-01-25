@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper._Panel;
 using Timekeeper.Enemies.Data;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ public class E1_IdleState : IdleState
 {
     private Enemy1 enemy;
 
-    public E1_IdleState(Entity entity, FiniteStateMachine stateMachine, EnemyAudioData audioData, string animBoolName, EnemyBaseData stateData, Enemy1 enemy) : base(entity, stateMachine, audioData, animBoolName, stateData)
+    public E1_IdleState(Entity entity, FiniteStateMachine stateMachine, BaseAudioData baseAudioData, string animBoolName, EnemyBaseData stateData, Enemy1 enemy) : base(entity, stateMachine, baseAudioData, animBoolName, stateData)
     {
         this.enemy = enemy;
     }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Timekeeper._Panel.UpGrate;
 using Timekeeper.CoreSystem;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +15,7 @@ namespace Timekeeper
         public Stats stats;
 
         public GameObject bloodEffect;
+        public Text nowLevel;
 
         private float _preHealth;
         private float _curHealth;
@@ -37,7 +39,7 @@ namespace Timekeeper
                 obj.GetComponent<BloodbarEffect>().IniBloodBarEffect(_curHealth,_preHealth);
             }
 
-            
+            nowLevel.text = UpgradeAndItems.Instance.currentLevel.ToString();
         }
     }
 }

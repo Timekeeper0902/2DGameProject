@@ -1,4 +1,5 @@
 using System;
+using Timekeeper._Panel;
 using UnityEngine;
 using Timekeeper.CoreSystem;
 using Timekeeper.ScriptableObjects.Weapons;
@@ -12,6 +13,8 @@ namespace Timekeeper.Weapons
 
         protected Animator baseAnimator;
         protected Animator weaponAnimator;
+
+        public BaseAudioData audioData;
 
         protected PlayerAttackState state;
 

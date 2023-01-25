@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper._Panel;
 using Timekeeper.Enemies.Data;
 using UnityEngine;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class Enemy1 : Entity
 {
@@ -16,12 +19,12 @@ public class Enemy1 : Entity
 
     [SerializeField]
     private EnemyBaseData stateData;
-
-    [SerializeField] private EnemyAudioData _audioData;
-
+    
+    [FormerlySerializedAs("_audioData")] [SerializeField] private BaseAudioData _audioData;
 
     [SerializeField]
     private Transform meleeAttackPosition;
+
 
     public override void Awake()
     {
@@ -41,7 +44,7 @@ public class Enemy1 : Entity
 
     private void Start()
     {
-        stateMachine.Initialize(moveState);        
+        stateMachine.Initialize(moveState);
     }
 
     public override void OnDrawGizmos()

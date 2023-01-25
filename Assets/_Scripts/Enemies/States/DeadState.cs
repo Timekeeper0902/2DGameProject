@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper._Panel;
 using Timekeeper.Enemies.Data;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ public class DeadState : State
     protected EnemyBaseData stateData;
 
 
-    public DeadState(Entity entity, FiniteStateMachine stateMachine, EnemyAudioData audioData, string animBoolName, EnemyBaseData stateData) : base(entity, stateMachine, audioData, animBoolName)
+    public DeadState(Entity entity, FiniteStateMachine stateMachine, BaseAudioData baseAudioData, string animBoolName, EnemyBaseData stateData) : base(entity, stateMachine, baseAudioData, animBoolName)
     {
         this.stateData = stateData;
     }

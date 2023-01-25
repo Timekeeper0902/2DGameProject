@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper._Panel;
 using Timekeeper.Enemies.Data;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Enemy2 : Entity
 {   
@@ -16,7 +18,7 @@ public class Enemy2 : Entity
     public E2_RangedAttackState rangedAttackState { get; private set; }
     
     [SerializeField] public EnemyBaseData stateData;
-    [SerializeField] public EnemyAudioData _audioData;
+    [SerializeField] public BaseAudioData _audioData;
 
     [SerializeField]
     private Transform meleeAttackPosition;

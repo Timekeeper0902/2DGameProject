@@ -1,5 +1,7 @@
+using Timekeeper._Panel;
 using Timekeeper.Enemies.Data;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Timekeeper.Enemies.EnemySpecific.Enemy3
 {
@@ -19,7 +21,7 @@ namespace Timekeeper.Enemies.EnemySpecific.Enemy3
 
         [SerializeField] private EnemyBaseData stateData;
 
-        [SerializeField] private EnemyAudioData _audioData;
+        [FormerlySerializedAs("baseAudioData")] [SerializeField] private BaseAudioData _audioData;
 
 
         [SerializeField] private Transform meleeAttackPosition;

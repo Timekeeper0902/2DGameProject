@@ -131,7 +131,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -679396035
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -6949323471574244179, guid: ddf50f95aab6a44479230421f97f0242,
     type: 3}
@@ -217,12 +217,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityData: {fileID: 11400000, guid: c4b96808ceb2fee429a857c7ee9c504c, type: 2}
+  baseAudioData: {fileID: 0}
   wallCheck: {fileID: 1325020979558581671}
   ledgeCheck: {fileID: 1325020980188819128}
   playerCheck: {fileID: 1325020980260310465}
   groundCheck: {fileID: 1325020980322377328}
   stateData: {fileID: 11400000, guid: 80839ce24abd12d47b93b53f01347c88, type: 2}
-  _audioData: {fileID: 0}
+  _audioData: {fileID: 11400000, guid: fb4cbc99c3562814689335e64ad6d9fc, type: 2}
   meleeAttackPosition: {fileID: 1325020980383231186}
   rangedAttackPosition: {fileID: 1325020980687699061}
 --- !u!1 &1325020980188819129

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Timekeeper;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
 
 public class PlayerInputHandler : Singleton<PlayerInputHandler>
 {
@@ -23,6 +24,8 @@ public class PlayerInputHandler : Singleton<PlayerInputHandler>
     public bool DashInput { get; private set; }
     public bool DashInputStop { get; private set; }
     public bool EscInput { get; private set; }
+    public bool ActiveInput { get; private set; }
+    public bool SpaceInput { get; private set; }
 
     public bool[] AttackInputs { get; private set; }
 
@@ -168,6 +171,32 @@ public class PlayerInputHandler : Singleton<PlayerInputHandler>
         if (context.canceled)
         {
             EscInput = !EscInput;
+        }
+    }
+    
+    public void OnActiveInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            ActiveInput = true;
+        }
+        
+        if (context.canceled)
+        {
+            ActiveInput = false;
+        }
+    }
+    
+    public void OnSpaceInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            SpaceInput = true;
+        }
+        
+        if (context.canceled)
+        {
+            SpaceInput = false;
         }
     }
 }

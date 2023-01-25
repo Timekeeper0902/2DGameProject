@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Timekeeper._Panel;
 using Timekeeper.Player;
-using Timekeeper.Player.Data;
 using Timekeeper.CoreSystem;
 using Timekeeper.Intermediaries;
 using Timekeeper.Panel.PausePanel;
 using Timekeeper.Weapons;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.Serialization;
 
 public class Player : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private PlayerData playerData;
 
-    [SerializeField] private PlayerAudioData audioData;
+    [FormerlySerializedAs("baseAudioData")] [FormerlySerializedAs("mainAudioData")] [SerializeField] private BaseAudioData _audioData;
     #endregion
 
     #region 组件
@@ -64,21 +65,21 @@ public class Player : MonoBehaviour
         
         StateMachine = new PlayerStateMachine();
 
-        IdleState = new PlayerIdleState(this, StateMachine, playerData, audioData,"idle");
-        MoveState = new PlayerMoveState(this, StateMachine, playerData, audioData,"move");
-        JumpState = new PlayerJumpState(this, StateMachine, playerData, audioData,"inAir");
-        InAirState = new PlayerInAirState(this, StateMachine, playerData, audioData,"inAir");
-        LandState = new PlayerLandState(this, StateMachine, playerData, audioData,"land");
-        WallSlideState = new PlayerWallSlideState(this, StateMachine, playerData, audioData,"wallSlide");
-        WallGrabState = new PlayerWallGrabState(this, StateMachine, playerData, audioData,"wallGrab");
-        WallClimbState = new PlayerWallClimbState(this, StateMachine, playerData,audioData, "wallClimb");
-        WallJumpState = new PlayerWallJumpState(this, StateMachine, playerData, audioData,"inAir");
-        LedgeClimbState = new PlayerLedgeClimbState(this, StateMachine, playerData, audioData,"ledgeClimbState");
-        DashState = new PlayerDashState(this, StateMachine, playerData,audioData, "inAir");
-        CrouchIdleState = new PlayerCrouchIdleState(this, StateMachine, playerData, audioData,"crouchIdle");
-        CrouchMoveState = new PlayerCrouchMoveState(this, StateMachine, playerData,audioData, "crouchMove");
-        PrimaryAttackState = new PlayerAttackState(this, StateMachine, playerData, audioData,"attack" );
-        SecondaryAttackState = new PlayerAttackState(this, StateMachine, playerData, audioData,"attack");
+        IdleState = new PlayerIdleState(this, StateMachine, playerData, _audioData,"idle");
+        MoveState = new PlayerMoveState(this, StateMachine, playerData, _audioData,"move");
+        JumpState = new PlayerJumpState(this, StateMachine, playerData, _audioData,"inAir");
+        InAirState = new PlayerInAirState(this, StateMachine, playerData, _audioData,"inAir");
+        LandState = new PlayerLandState(this, StateMachine, playerData, _audioData,"land");
+        WallSlideState = new PlayerWallSlideState(this, StateMachine, playerData, _audioData,"wallSlide");
+        WallGrabState = new PlayerWallGrabState(this, StateMachine, playerData, _audioData,"wallGrab");
+        WallClimbState = new PlayerWallClimbState(this, StateMachine, playerData,_audioData, "wallClimb");
+        WallJumpState = new PlayerWallJumpState(this, StateMachine, playerData, _audioData,"inAir");
+        LedgeClimbState = new PlayerLedgeClimbState(this, StateMachine, playerData, _audioData,"ledgeClimbState");
+        DashState = new PlayerDashState(this, StateMachine, playerData,_audioData, "inAir");
+        CrouchIdleState = new PlayerCrouchIdleState(this, StateMachine, playerData, _audioData,"crouchIdle");
+        CrouchMoveState = new PlayerCrouchMoveState(this, StateMachine, playerData,_audioData, "crouchMove");
+        PrimaryAttackState = new PlayerAttackState(this, StateMachine, playerData, _audioData,"attack" );
+        SecondaryAttackState = new PlayerAttackState(this, StateMachine, playerData, _audioData,"attack");
     }
 
     private void Start()

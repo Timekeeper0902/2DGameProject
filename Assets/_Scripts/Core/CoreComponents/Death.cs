@@ -1,3 +1,4 @@
+using Timekeeper._Panel.UpGrate;
 using UnityEngine;
 
 namespace Timekeeper.CoreSystem
@@ -25,6 +26,11 @@ namespace Timekeeper.CoreSystem
             }
             //隐藏死亡单位
             core.transform.parent.gameObject.SetActive(false);
+
+            if (core.transform.parent.tag == "Enemy")
+            {
+                UpgradeAndItems.Instance.AddExperience(10);
+            }
 
             //玩家重生
             if (core.transform.parent.tag == "Player")

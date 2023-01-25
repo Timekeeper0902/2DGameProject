@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Timekeeper;
-using Timekeeper.Player.Data;
+using Timekeeper._Panel;
 using UnityEngine;
 
 public class PlayerJumpState : PlayerAbilityState 
 {
 	private int _amountOfJumpsLeft;
 
-	public PlayerJumpState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, PlayerAudioData audioData, string animBoolName) : base(player, stateMachine, playerData, audioData, animBoolName)
+	public PlayerJumpState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, BaseAudioData baseAudioData, string animBoolName) : base(player, stateMachine, playerData, baseAudioData, animBoolName)
 	{
 		_amountOfJumpsLeft = playerData.amountOfJumps;
 	}
@@ -22,8 +22,7 @@ public class PlayerJumpState : PlayerAbilityState
 		isAbilityDone = true;
 		_amountOfJumpsLeft--;
 		player.InAirState.SetIsJumping();
-		AudioManager.Instance.PlayerJumpPlay(audioData.jumpClip);
-		Debug.Log(GameDataManager.Instance._musicData.musicValue);
+		AudioManager.Instance.PlayerJumpPlay(audioData.p_jumpClip);
 	}
 
 	public bool CanJump() 

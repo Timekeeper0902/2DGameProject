@@ -16,6 +16,7 @@ namespace Timekeeper.Weapons
 
         private List<IDamageable> detectedDamageables = new List<IDamageable>();
         private List<IKnockbackable> detectedKnockbackables = new List<IKnockbackable>();
+        
 
         protected override void Awake() {
             base.Awake();
@@ -39,6 +40,7 @@ namespace Timekeeper.Weapons
 
             foreach (IDamageable item in detectedDamageables.ToList()) {
                 item.Damage(details.damageAmount);
+                AudioManager.Instance.EnemyHitPlay(audioData.e_hitClip);
             }
 
             foreach (IKnockbackable item in detectedKnockbackables.ToList()) {
