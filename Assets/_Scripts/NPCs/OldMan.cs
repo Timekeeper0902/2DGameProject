@@ -25,7 +25,6 @@ namespace Timekeeper.NPCs
         {
             if (other.transform.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.BoxCollider2D")
             {
-                print("into");
                 if (PlayerInputHandler.Instance.ActiveInput)
                 {
                     isTalking = true;

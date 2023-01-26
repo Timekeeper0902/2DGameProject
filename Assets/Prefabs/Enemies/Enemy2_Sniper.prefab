@@ -217,11 +217,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityData: {fileID: 11400000, guid: c4b96808ceb2fee429a857c7ee9c504c, type: 2}
-  baseAudioData: {fileID: 0}
   wallCheck: {fileID: 1325020979558581671}
   ledgeCheck: {fileID: 1325020980188819128}
   playerCheck: {fileID: 1325020980260310465}
   groundCheck: {fileID: 1325020980322377328}
+  enemyBloodBar: {fileID: 0}
   stateData: {fileID: 11400000, guid: 80839ce24abd12d47b93b53f01347c88, type: 2}
   _audioData: {fileID: 11400000, guid: fb4cbc99c3562814689335e64ad6d9fc, type: 2}
   meleeAttackPosition: {fileID: 1325020980383231186}
@@ -363,6 +363,9 @@ MonoBehaviour:
     type: 3}
   floatPoint: {fileID: 7240784506795521213, guid: f9ebedd7d34593d4e9a867a49cea89c6,
     type: 3}
+  enemyBloodBar: {fileID: 1561261755630489962, guid: 73f731d25a2e95b41948571f6ad46d44,
+    type: 3}
+  blood: {fileID: 0}
   maxKnockbackTime: 0.2
 --- !u!1 &1325020980321256167
 GameObject:

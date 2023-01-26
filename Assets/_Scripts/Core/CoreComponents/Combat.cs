@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace Timekeeper.CoreSystem
 {
@@ -7,6 +9,10 @@ namespace Timekeeper.CoreSystem
 
 		[SerializeField] private GameObject damageParticles;
 		public GameObject floatPoint;
+		public Image enemyBloodBar;
+		private Image bloodBar;
+		private Image blood;
+		private Canvas _canvas;
 	
 		private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
 		private CollisionSenses CollisionSenses {
@@ -25,16 +31,28 @@ namespace Timekeeper.CoreSystem
 		private bool isKnockbackActive;
 		private float knockbackStartTime;
 
+		private void Start()
+		{
+			
+		}
+
 		public override void LogicUpdate() {
 			CheckKnockback();
+			//CheckBloodBar();
 		}
 
 		public void Damage(float amount) {
 			Debug.Log(core.transform.parent.name + " Damaged!");
 			Stats?.DecreaseHealth(amount);
 			GameObject gb = Instantiate(floatPoint,transform.position,Quaternion.identity) as GameObject;
-			gb.transform.GetChild(0).GetComponent<TextMesh>().text = amount.ToString(); 
+			gb.transform.GetChild(0).GetComponent<TextMesh>().text = amount.ToString();
 
+			// if (core.transform.parent.CompareTag("Enemy"))
+			// {
+			// 	enemyBloodBar.gameObject.SetActive(true);
+			// 	blood.fillAmount = _stats.CurrentHealth / _stats.maxHealth;
+			// }
+			
 			ParticleManager?.StartParticlesWithRandomRotation(damageParticles);
 		}
 
@@ -54,5 +72,16 @@ namespace Timekeeper.CoreSystem
 				Movement.CanSetVelocity = true;
 			}
 		}
+
+		// private void CheckBloodBar()
+		// {
+		// 	if (core.transform.parent.CompareTag("Enemy"))
+		// 	{
+		// 		Vector3 screenPos = Camera.main.WorldToScreenPoint(this.transform.position);
+		// 		enemyBloodBar.transform.position = new Vector3(screenPos.x,screenPos.y + 20);
+		// 		blood.transform.position = new Vector3(screenPos.x,screenPos.y + 20);
+		// 	}
+		// 	
+		// }
 	}
 }

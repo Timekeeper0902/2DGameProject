@@ -52,10 +52,9 @@ public class CombatTestDummy : MonoBehaviour, IDamageable, IKnockbackable
     
     private void CheckKnockback() 
     {
-        if (isKnockbackActive
-            && ((CurrentVelocity.y <= 0.01f)
-                || Time.time >= knockbackStartTime + 0.2f)
-           ) {
+        if (isKnockbackActive && ((CurrentVelocity.y <= 0.01f)
+                                  || Time.time >= knockbackStartTime + 0.2f)) 
+        {
             isKnockbackActive = false;
             CanSetVelocity = true;
         }

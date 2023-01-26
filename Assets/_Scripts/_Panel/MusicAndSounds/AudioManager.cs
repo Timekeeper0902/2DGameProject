@@ -8,6 +8,7 @@ namespace Timekeeper
     {
         private AudioSource _playerJumpSource;
         private AudioSource _playerMoveSource;
+        private AudioSource _playerHitSource;
         
         private AudioSource _EnemyHitSource;
         private AudioSource _errowShootSource;
@@ -45,6 +46,23 @@ namespace Timekeeper
             _playerJumpSource.volume = GameDataManager.Instance._musicData.audioValue;
             _playerJumpSource.mute = !GameDataManager.Instance._musicData.isOpenAudio;
             _playerJumpSource.Play();
+        }
+        
+        /// <summary>
+        /// 玩家受伤
+        /// </summary>
+        /// <param name="clip"></param>
+        public void PlayerHitPlay(AudioClip clip)
+        {
+            if (_playerHitSource == null)
+            {
+                _playerHitSource = gameObject.AddComponent<AudioSource>();
+                AudioSetting.Instance.AddAudioSource(_playerJumpSource);
+            }
+            _playerHitSource.clip = clip;
+            _playerHitSource.volume = GameDataManager.Instance._musicData.audioValue;
+            _playerHitSource.mute = !GameDataManager.Instance._musicData.isOpenAudio;
+            _playerHitSource.Play();
         }
         
         /// <summary>

@@ -17,9 +17,6 @@ public class Entity : MonoBehaviour {
 	public FiniteStateMachine stateMachine;
 
 	public D_Entity entityData;
-	
-	[FormerlySerializedAs("mainAudioData")] [SerializeField] private BaseAudioData baseAudioData;
-	
 
 	public Animator anim { get; private set; }
 	public AnimationToStatemachine atsm { get; private set; }
@@ -37,6 +34,8 @@ public class Entity : MonoBehaviour {
 
 	private float currentStunResistance;
 	private float lastDamageTime;
+
+	public GameObject enemyBloodBar;
 
 	private Vector2 velocityWorkspace;
 

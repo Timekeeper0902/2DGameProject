@@ -17,7 +17,15 @@ namespace Timekeeper._Panel.UpGrate
         {
             stats = GameObject.Find("Player").GetComponentInChildren<Stats>();
         }
-        
+
+        private void Start()
+        {
+            currentExp = 0;
+            currentLevel = 1;
+            data.dashCooldown = 999999999999999999999f;
+            data.amountOfJumps = 1;
+        }
+
 
         public void AddExperience(int num)
         {
@@ -26,13 +34,17 @@ namespace Timekeeper._Panel.UpGrate
             {
                 if (currentExp >= upgradeData.ExperienceData[i].nextLevelExp)
                 {
+                    int p = currentLevel;
                     currentLevel = upgradeData.ExperienceData[i].targetLevel;
+                    if(currentLevel!=p)
+                        CheckUpgradeInfo();
                 }
             }
-            
-            if(currentLevel == 1)
-                return;
-            else if(currentLevel == 2)
+        }
+
+        public void CheckUpgradeInfo()
+        {
+            if(currentLevel == 2)
             {
                 stats.maxHealth += 20;
                 data.dashCooldown = 8;
