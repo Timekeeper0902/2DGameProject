@@ -26,7 +26,7 @@ public class ReSpawnManager : Singleton<ReSpawnManager>
     public bool isDeath;
     public Animator DeathUI;
 
-    private void Awake()
+    protected override void Awake()
     {
         DeathUI = GameObject.Find("DeathUI").GetComponent<Animator>();
         startTime = Time.time;

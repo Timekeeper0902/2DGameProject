@@ -11,21 +11,21 @@ namespace Timekeeper.NPCs
         public Image dialog;
         public Text dialogText;
         public Text dialogName;
-        public Convensation[] convensation;
+        public Conversation conversation;
         protected bool isTalking;
 
-        protected abstract void OnTriggerEnter2D(Collider2D other);
+        protected virtual void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.transform.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.BoxCollider2D")
+            {
+                textUI.text = "按E对话";
+                textUI.gameObject.SetActive(true);
+            }
+        }
         
         protected abstract void OnTriggerStay2D(Collider2D other);
 
         protected abstract void OnTriggerExit2D(Collider2D other);
 
-    }
-    
-    [Serializable]
-    public class Convensation
-    {
-        public string name;
-        public string text;
     }
 }

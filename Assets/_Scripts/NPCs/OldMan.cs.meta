@@ -1,3 +1,16 @@
 fileFormatVersion: 2
 guid: f26154f5fe70459989ec7bc862966a11
-timeCreated: 1673858278
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - textUI: {instanceID: 0}
+  - dialog: {instanceID: 0}
+  - dialogText: {instanceID: 0}
+  - dialogName: {instanceID: 0}
+  - conversation: {fileID: 11400000, guid: fa4e96a8dc31a4742b573896f043f5df, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -26,16 +26,18 @@ namespace Timekeeper
             {
                 if (other.gameObject.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.BoxCollider2D")
                 {
+                    LoadManager.Instance.LoadNextLevel();
                     text.text = "你还没有消灭场景中所有的敌人！";
                     text.gameObject.SetActive(true);
+                    _player.gameObject.transform.position= new Vector2(-36f, 0);
                 }
             }
             else
             {
                 if (other.gameObject.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.BoxCollider2D")
                 {
-                    SceneManager.LoadScene("GameScene1");
-                    _player.gameObject.transform.position= new Vector2(-36.6f, 0);
+                    LoadManager.Instance.LoadNextLevel();
+                    _player.gameObject.transform.position= new Vector2(-36f, 0);
                 }
             }
         }

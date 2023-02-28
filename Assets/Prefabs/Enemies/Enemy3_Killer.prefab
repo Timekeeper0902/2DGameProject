@@ -248,14 +248,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityData: {fileID: 11400000, guid: 6212430a3312186459c87a56b3b87d55, type: 2}
-  baseAudioData: {fileID: 0}
   wallCheck: {fileID: 5524928651904377093}
   ledgeCheck: {fileID: 5524928652084593765}
   playerCheck: {fileID: 5524928651389695683}
   groundCheck: {fileID: 5524928653250829221}
+  enemyBloodBar: {fileID: 1561261754062979868, guid: 73f731d25a2e95b41948571f6ad46d44,
+    type: 3}
+  hpInfo: {fileID: 0}
+  hpInfoY: 55
   E3_meleeAttackCounter: 0
   stateData: {fileID: 11400000, guid: a75670cef7c5feb4e8bab104c9091dc0, type: 2}
-  baseAudioData: {fileID: 11400000, guid: fb4cbc99c3562814689335e64ad6d9fc, type: 2}
+  _audioData: {fileID: 0}
   meleeAttackPosition: {fileID: 5524928651206981966}
 --- !u!114 &5524928651319714589
 MonoBehaviour:
@@ -628,6 +631,7 @@ MonoBehaviour:
     type: 3}
   floatPoint: {fileID: 7240784506795521213, guid: f9ebedd7d34593d4e9a867a49cea89c6,
     type: 3}
+  entity: {fileID: 5524928651319714656}
   maxKnockbackTime: 0.2
 --- !u!61 &5524928652553638871
 BoxCollider2D:

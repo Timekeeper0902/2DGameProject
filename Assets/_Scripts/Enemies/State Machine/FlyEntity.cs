@@ -17,6 +17,10 @@ namespace Timekeeper._Scripts.Enemies
         public Transform[] idlePoints;
         protected Transform chasePoint;
         
+        protected float  positionX;
+        protected float checkTime = 0.5f;
+        protected float preTime = 0;
+        
         public GameObject hitParticles;
         public GameObject floatPoint;
         
@@ -97,6 +101,24 @@ namespace Timekeeper._Scripts.Enemies
 
         public virtual void FinishAttack() {
             
+        }
+
+        public virtual bool CheckFacing()
+        {
+            if (checkTime + preTime > Time.time)
+            {
+                preTime = Time.time;
+                positionX = transform.position.x;
+            }
+
+            if (positionX > transform.position.x)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
 
     }

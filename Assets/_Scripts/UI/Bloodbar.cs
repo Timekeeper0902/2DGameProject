@@ -21,7 +21,7 @@ namespace Timekeeper
         private float _preHealth;
         private float _curHealth;
 
-        private void Awake()
+        protected override void Awake()
         {
             stats = GameObject.Find("Player").GetComponentInChildren<Stats>();
             playerData.lastDashTime = -1f;

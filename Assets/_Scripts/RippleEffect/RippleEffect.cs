@@ -41,7 +41,7 @@ public class RippleEffect : MonoBehaviour
             time = 0;
         }
 
-        public void Update()
+        public new void Update()
         {
             time += Time.deltaTime;
         }
@@ -89,6 +89,7 @@ public class RippleEffect : MonoBehaviour
         material = new Material(shader);
         material.hideFlags = HideFlags.DontSave;
         material.SetTexture("_GradTex", gradTexture);
+        player = GameObject.FindWithTag("Player").GetComponent<Player>();
 
         UpdateShaderParameters();
     }
@@ -109,7 +110,7 @@ public class RippleEffect : MonoBehaviour
 
     public void Emit()
     {
-       screenPos = (Vector2)Camera.main.WorldToScreenPoint(player.transform.position);
+        screenPos = (Vector2)Camera.main.WorldToScreenPoint(player.transform.position);
         droplets[0].Reset(screenPos);
     }
 }

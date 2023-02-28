@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Animations;
 using Random = UnityEngine.Random;
 
 namespace Timekeeper._Scripts.Enemies.EnemySpecific.Bat
@@ -9,6 +10,8 @@ namespace Timekeeper._Scripts.Enemies.EnemySpecific.Bat
         public bool CanSetVelocity { get; set; }
 
         public Vector2 CurrentVelocity { get; private set; }
+
+        public float knockbackDistance;
 
         private Vector2 workspace;
     
@@ -73,14 +76,28 @@ namespace Timekeeper._Scripts.Enemies.EnemySpecific.Bat
             gb.transform.GetChild(0).GetComponent<TextMesh>().text = amount.ToString(); 
 
             Instantiate(hitParticles, transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
+            if (CheckFacing())
+            {
+                transform.position = new Vector3(-knockbackDistance + transform.position.x,transform.position.y,transform.position.z) ;
+                print(this.transform.position);
+                positionX = transform.position.x;
+            }
+            else
+            {
+                transform.position = new Vector3(knockbackDistance + transform.position.x,transform.position.y,transform.position.z) ;
+                print(this.transform.position);
+                positionX = transform.position.x;
+            }
         }
 
         public override void TriggerAttack()
         {
             base.TriggerAttack();
-
-            
         }
-        
+
+        public override bool CheckFacing()
+        {
+            return base.CheckFacing();
+        }
     }
 }

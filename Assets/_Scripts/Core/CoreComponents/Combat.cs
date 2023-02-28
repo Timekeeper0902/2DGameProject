@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +10,7 @@ namespace Timekeeper.CoreSystem
 
 		[SerializeField] private GameObject damageParticles;
 		public GameObject floatPoint;
-		public Image enemyBloodBar;
+		public Entity entity;
 		private Image bloodBar;
 		private Image blood;
 		private Canvas _canvas;
@@ -46,12 +47,19 @@ namespace Timekeeper.CoreSystem
 			Stats?.DecreaseHealth(amount);
 			GameObject gb = Instantiate(floatPoint,transform.position,Quaternion.identity) as GameObject;
 			gb.transform.GetChild(0).GetComponent<TextMesh>().text = amount.ToString();
-
-			// if (core.transform.parent.CompareTag("Enemy"))
-			// {
-			// 	enemyBloodBar.gameObject.SetActive(true);
-			// 	blood.fillAmount = _stats.CurrentHealth / _stats.maxHealth;
-			// }
+			if (core.transform.parent.CompareTag("Enemy"))
+			{
+				if (Stats.CurrentHealth <= 0)
+				{
+					entity.hpInfo.SetActive(false);
+				}
+				else
+				{
+					entity.hpInfo.SetActive(true);
+					StartCoroutine(hpInfoFalse());
+				}
+				
+			}
 			
 			ParticleManager?.StartParticlesWithRandomRotation(damageParticles);
 		}
@@ -71,6 +79,12 @@ namespace Timekeeper.CoreSystem
 				isKnockbackActive = false;
 				Movement.CanSetVelocity = true;
 			}
+		}
+
+		IEnumerator hpInfoFalse()
+		{
+			yield return new WaitForSeconds(1.5f);
+			entity.hpInfo.SetActive(false);
 		}
 
 		// private void CheckBloodBar()

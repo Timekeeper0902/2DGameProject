@@ -25,7 +25,7 @@ public class PlayerInputHandler : Singleton<PlayerInputHandler>
     public bool DashInputStop { get; private set; }
     public bool EscInput { get; private set; }
     public bool ActiveInput { get; private set; }
-    public bool SpaceInput { get; private set; }
+    public int SpaceInput { get; private set; }
 
     public bool[] AttackInputs { get; private set; }
 
@@ -191,13 +191,18 @@ public class PlayerInputHandler : Singleton<PlayerInputHandler>
     {
         if (context.started)
         {
-            SpaceInput = true;
+            
         }
         
         if (context.canceled)
         {
-            SpaceInput = false;
+            SpaceInput++;
         }
+    }
+
+    public void SetSpaceInputZero()
+    {
+        SpaceInput = 0;
     }
 }
 

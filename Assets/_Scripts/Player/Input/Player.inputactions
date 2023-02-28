@@ -88,12 +88,12 @@
                 },
                 {
                     "name": "Space",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "932babd5-5215-44cc-94a0-4bb9a2858a49",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [

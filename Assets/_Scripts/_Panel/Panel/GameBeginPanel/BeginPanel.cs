@@ -14,7 +14,7 @@ namespace Timekeeper
 
         private void Start()
         {
-            btnBegin.onClick.AddListener((() => SceneManager.LoadScene("GameScene")));
+            //btnBegin.onClick.AddListener((() => SceneManager.LoadScene("GameScene")));
             btnSetting.onClick.AddListener(SettingPanel.Instance.ShowMe);
             btnQuit.onClick.AddListener((() => Application.Quit()));
         }

@@ -13,7 +13,7 @@ namespace Timekeeper._Panel.UpGrate
         public PlayerData data;
         public Stats stats;
 
-        private void Awake()
+        protected override void Awake()
         {
             stats = GameObject.Find("Player").GetComponentInChildren<Stats>();
         }
@@ -22,7 +22,7 @@ namespace Timekeeper._Panel.UpGrate
         {
             currentExp = 0;
             currentLevel = 1;
-            data.dashCooldown = 999999999999999999999f;
+            data.dashCooldown = 3f;
             data.amountOfJumps = 1;
         }
 

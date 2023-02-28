@@ -4,6 +4,7 @@ using Timekeeper._Panel;
 using Timekeeper.CoreSystem;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class Entity : MonoBehaviour {
 	private Movement Movement { get => movement ?? Core.GetCoreComponent(ref movement); }
@@ -11,8 +12,10 @@ public class Entity : MonoBehaviour {
 	private Movement movement;
 	
 	private CollisionSenses CollisionSenses { get => collisionSenses ?? Core.GetCoreComponent(ref collisionSenses); }
-
 	private CollisionSenses collisionSenses;
+	
+	private Stats Stats { get => _stats ?? Core.GetCoreComponent(ref _stats); }
+	private Stats _stats;
 
 	public FiniteStateMachine stateMachine;
 
@@ -36,6 +39,8 @@ public class Entity : MonoBehaviour {
 	private float lastDamageTime;
 
 	public GameObject enemyBloodBar;
+	public GameObject hpInfo;
+	public float hpInfoY;
 
 	private Vector2 velocityWorkspace;
 
@@ -50,6 +55,9 @@ public class Entity : MonoBehaviour {
 		atsm = GetComponent<AnimationToStatemachine>();
 
 		stateMachine = new FiniteStateMachine();
+		hpInfo = Instantiate(enemyBloodBar);
+		hpInfo.transform.SetParent(GameObject.Find("Canvas").transform, false);
+		hpInfo.SetActive(false);
 	}
 
 	public virtual void Update() {
@@ -58,7 +66,13 @@ public class Entity : MonoBehaviour {
 
 		anim.SetFloat("yVelocity", Movement.RB.velocity.y);
 
-		if (Time.time >= lastDamageTime + entityData.stunRecoveryTime) {
+		hpInfo.transform.position = Camera.main.WorldToScreenPoint(this.transform.position);
+		hpInfo.transform.position += Vector3.up * hpInfoY;
+		hpInfo.transform.GetChild(0).GetComponent<Image>().fillAmount = Stats.CurrentHealth / Stats.maxHealth;
+		
+
+		if (Time.time >= lastDamageTime + entityData.stunRecoveryTime) 
+		{
 			ResetStunResistance();
 		}
 	}
@@ -84,7 +98,8 @@ public class Entity : MonoBehaviour {
 		Movement.RB.velocity = velocityWorkspace;
 	}
 
-	public virtual void ResetStunResistance() {
+	public virtual void ResetStunResistance() 
+	{
 		isStunned = false;
 		currentStunResistance = entityData.stunResistance;
 	}
